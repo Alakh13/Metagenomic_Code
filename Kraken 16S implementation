@@ -1,0 +1,1759 @@
+(base) alakh@alakh-HP-Laptop-15-bs0xx:~$ conda config --add channels bioconda
+Warning: 'bioconda' already in 'channels' list, moving to the top
+(base) alakh@alakh-HP-Laptop-15-bs0xx:~$ conda config --add channels conda-forge
+Warning: 'conda-forge' already in 'channels' list, moving to the top
+(base) alakh@alakh-HP-Laptop-15-bs0xx:~$ conda config --show channels
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+(base) alakh@alakh-HP-Laptop-15-bs0xx:~$ conda create -n 16S fastq multiqc fastp porechop kraken2 krona
+Retrieving notices: ...working... done
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.1.0
+  latest version: 23.3.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=23.3.1
+
+
+
+## Package Plan ##
+
+  environment location: /home/alakh/miniconda3/envs/16S
+
+  added / updated specs:
+    - fastp
+    - fastq
+    - kraken2
+    - krona
+    - multiqc
+    - porechop
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    brotli-1.0.9               |       h166bdaf_8          18 KB  conda-forge
+    brotli-bin-1.0.9           |       h166bdaf_8          20 KB  conda-forge
+    brotlipy-0.7.0             |py310h5764c6d_1005         342 KB  conda-forge
+    certifi-2022.12.7          |     pyhd8ed1ab_0         147 KB  conda-forge
+    cffi-1.15.1                |  py310h255011f_3         231 KB  conda-forge
+    charset-normalizer-3.1.0   |     pyhd8ed1ab_0          44 KB  conda-forge
+    click-8.1.3                |unix_pyhd8ed1ab_2          74 KB  conda-forge
+    coloredlogs-15.0.1         |     pyhd8ed1ab_3          40 KB  conda-forge
+    colormath-3.0.0            |             py_2          34 KB  conda-forge
+    contourpy-1.0.7            |  py310hdf3cbec_0         211 KB  conda-forge
+    cryptography-40.0.2        |  py310h34c0648_0         1.4 MB  conda-forge
+    cycler-0.11.0              |     pyhd8ed1ab_0          10 KB  conda-forge
+    fastp-0.23.2               |       h5f740d0_3         3.2 MB  bioconda
+    fastq-2.0.2                |     pyhdfd78af_0          28 KB  bioconda
+    fonttools-4.39.3           |  py310h1fa729e_0         2.0 MB  conda-forge
+    future-0.18.3              |     pyhd8ed1ab_0         357 KB  conda-forge
+    humanfriendly-10.0         |  py310hff52083_4         120 KB  conda-forge
+    idna-3.4                   |     pyhd8ed1ab_0          55 KB  conda-forge
+    importlib-metadata-6.6.0   |     pyha770c72_0          25 KB  conda-forge
+    isa-l-2.30.0               |       ha770c72_4         192 KB  conda-forge
+    jinja2-3.1.2               |     pyhd8ed1ab_1          99 KB  conda-forge
+    kiwisolver-1.4.4           |  py310hbf28c38_1          76 KB  conda-forge
+    krona-2.8.1                | pl5321hdfd78af_1         155 KB  bioconda
+    libbrotlicommon-1.0.9      |       h166bdaf_8          66 KB  conda-forge
+    libbrotlidec-1.0.9         |       h166bdaf_8          33 KB  conda-forge
+    libbrotlienc-1.0.9         |       h166bdaf_8         288 KB  conda-forge
+    lzstring-1.0.4             |          py_1001           6 KB  conda-forge
+    markdown-3.4.3             |     pyhd8ed1ab_0          69 KB  conda-forge
+    markdown-it-py-2.2.0       |     pyhd8ed1ab_0          61 KB  conda-forge
+    markupsafe-2.1.2           |  py310h1fa729e_0          23 KB  conda-forge
+    matplotlib-base-3.7.1      |  py310he60537e_0         6.5 MB  conda-forge
+    mdurl-0.1.0                |     pyhd8ed1ab_0          13 KB  conda-forge
+    minifasta-3.0.2            |     pyhd8ed1ab_0          26 KB  conda-forge
+    multiqc-1.14               |     pyhdfd78af_0         973 KB  bioconda
+    munkres-1.1.4              |     pyh9f0ad1d_0          12 KB  conda-forge
+    networkx-3.1               |     pyhd8ed1ab_0         1.4 MB  conda-forge
+    numpy-1.24.3               |  py310ha4c1d20_0         6.4 MB  conda-forge
+    openjpeg-2.5.0             |       hfec8fc6_2         344 KB  conda-forge
+    packaging-23.1             |     pyhd8ed1ab_0          45 KB  conda-forge
+    pillow-9.5.0               |  py310h065c6d2_0        44.3 MB  conda-forge
+    porechop-0.2.4             |  py310h30d9df9_3         105 KB  bioconda
+    pycparser-2.21             |     pyhd8ed1ab_0         100 KB  conda-forge
+    pygments-2.15.1            |     pyhd8ed1ab_0         821 KB  conda-forge
+    pyopenssl-23.1.1           |     pyhd8ed1ab_0         125 KB  conda-forge
+    pyparsing-3.0.9            |     pyhd8ed1ab_0          79 KB  conda-forge
+    pysocks-1.7.1              |     pyha2e5f31_6          19 KB  conda-forge
+    python-3.10.10             |he550d4f_0_cpython        24.7 MB  conda-forge
+    python-dateutil-2.8.2      |     pyhd8ed1ab_0         240 KB  conda-forge
+    python_abi-3.10            |          3_cp310           6 KB  conda-forge
+    pyyaml-6.0                 |  py310h5764c6d_5         172 KB  conda-forge
+    requests-2.29.0            |     pyhd8ed1ab_0          55 KB  conda-forge
+    rich-13.3.5                |     pyhd8ed1ab_0         179 KB  conda-forge
+    rich-click-1.6.1           |     pyhd8ed1ab_0          22 KB  conda-forge
+    simplejson-3.19.1          |  py310h1fa729e_0         106 KB  conda-forge
+    six-1.16.0                 |     pyh6c4a22f_0          14 KB  conda-forge
+    spectra-0.0.11             |             py_1          19 KB  conda-forge
+    typing_extensions-4.5.0    |     pyha770c72_0          31 KB  conda-forge
+    unicodedata2-15.0.0        |  py310h5764c6d_0         500 KB  conda-forge
+    urllib3-1.26.15            |     pyhd8ed1ab_0         110 KB  conda-forge
+    yaml-0.2.5                 |       h7f98852_2          87 KB  conda-forge
+    zipp-3.15.0                |     pyhd8ed1ab_0          17 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        96.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge 
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-2_gnu 
+  blast              bioconda/linux-64::blast-2.13.0-hf3cf87c_1 
+  brotli             conda-forge/linux-64::brotli-1.0.9-h166bdaf_8 
+  brotli-bin         conda-forge/linux-64::brotli-bin-1.0.9-h166bdaf_8 
+  brotlipy           conda-forge/linux-64::brotlipy-0.7.0-py310h5764c6d_1005 
+  bzip2              conda-forge/linux-64::bzip2-1.0.8-h7f98852_4 
+  c-ares             conda-forge/linux-64::c-ares-1.18.1-h7f98852_0 
+  ca-certificates    conda-forge/linux-64::ca-certificates-2022.12.7-ha878542_0 
+  certifi            conda-forge/noarch::certifi-2022.12.7-pyhd8ed1ab_0 
+  cffi               conda-forge/linux-64::cffi-1.15.1-py310h255011f_3 
+  charset-normalizer conda-forge/noarch::charset-normalizer-3.1.0-pyhd8ed1ab_0 
+  click              conda-forge/noarch::click-8.1.3-unix_pyhd8ed1ab_2 
+  coloredlogs        conda-forge/noarch::coloredlogs-15.0.1-pyhd8ed1ab_3 
+  colormath          conda-forge/noarch::colormath-3.0.0-py_2 
+  contourpy          conda-forge/linux-64::contourpy-1.0.7-py310hdf3cbec_0 
+  cryptography       conda-forge/linux-64::cryptography-40.0.2-py310h34c0648_0 
+  curl               conda-forge/linux-64::curl-7.88.1-hdc1c0ab_1 
+  cycler             conda-forge/noarch::cycler-0.11.0-pyhd8ed1ab_0 
+  entrez-direct      bioconda/linux-64::entrez-direct-16.2-he881be0_1 
+  fastp              bioconda/linux-64::fastp-0.23.2-h5f740d0_3 
+  fastq              bioconda/noarch::fastq-2.0.2-pyhdfd78af_0 
+  fonttools          conda-forge/linux-64::fonttools-4.39.3-py310h1fa729e_0 
+  freetype           conda-forge/linux-64::freetype-2.12.1-hca18f0e_1 
+  future             conda-forge/noarch::future-0.18.3-pyhd8ed1ab_0 
+  gettext            conda-forge/linux-64::gettext-0.21.1-h27087fc_0 
+  humanfriendly      conda-forge/linux-64::humanfriendly-10.0-py310hff52083_4 
+  idna               conda-forge/noarch::idna-3.4-pyhd8ed1ab_0 
+  importlib-metadata conda-forge/noarch::importlib-metadata-6.6.0-pyha770c72_0 
+  isa-l              conda-forge/linux-64::isa-l-2.30.0-ha770c72_4 
+  jinja2             conda-forge/noarch::jinja2-3.1.2-pyhd8ed1ab_1 
+  keyutils           conda-forge/linux-64::keyutils-1.6.1-h166bdaf_0 
+  kiwisolver         conda-forge/linux-64::kiwisolver-1.4.4-py310hbf28c38_1 
+  kraken2            bioconda/linux-64::kraken2-2.1.2-pl5321h9f5acd7_3 
+  krb5               conda-forge/linux-64::krb5-1.20.1-h81ceb04_0 
+  krona              bioconda/noarch::krona-2.8.1-pl5321hdfd78af_1 
+  lcms2              conda-forge/linux-64::lcms2-2.15-haa2dc70_1 
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.40-h41732ed_0 
+  lerc               conda-forge/linux-64::lerc-4.0.0-h27087fc_0 
+  libblas            conda-forge/linux-64::libblas-3.9.0-16_linux64_openblas 
+  libbrotlicommon    conda-forge/linux-64::libbrotlicommon-1.0.9-h166bdaf_8 
+  libbrotlidec       conda-forge/linux-64::libbrotlidec-1.0.9-h166bdaf_8 
+  libbrotlienc       conda-forge/linux-64::libbrotlienc-1.0.9-h166bdaf_8 
+  libcblas           conda-forge/linux-64::libcblas-3.9.0-16_linux64_openblas 
+  libcurl            conda-forge/linux-64::libcurl-7.88.1-hdc1c0ab_1 
+  libdeflate         conda-forge/linux-64::libdeflate-1.18-h0b41bf4_0 
+  libedit            conda-forge/linux-64::libedit-3.1.20191231-he28a2e2_2 
+  libev              conda-forge/linux-64::libev-4.33-h516909a_1 
+  libffi             conda-forge/linux-64::libffi-3.4.2-h7f98852_5 
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-12.2.0-h65d4601_19 
+  libgfortran-ng     conda-forge/linux-64::libgfortran-ng-12.2.0-h69a702a_19 
+  libgfortran5       conda-forge/linux-64::libgfortran5-12.2.0-h337968e_19 
+  libgomp            conda-forge/linux-64::libgomp-12.2.0-h65d4601_19 
+  libiconv           conda-forge/linux-64::libiconv-1.17-h166bdaf_0 
+  libidn2            conda-forge/linux-64::libidn2-2.3.4-h166bdaf_0 
+  libjpeg-turbo      conda-forge/linux-64::libjpeg-turbo-2.1.5.1-h0b41bf4_0 
+  liblapack          conda-forge/linux-64::liblapack-3.9.0-16_linux64_openblas 
+  libnghttp2         conda-forge/linux-64::libnghttp2-1.52.0-h61bc06f_0 
+  libnsl             conda-forge/linux-64::libnsl-2.0.0-h7f98852_0 
+  libopenblas        conda-forge/linux-64::libopenblas-0.3.21-pthreads_h78a6416_3 
+  libpng             conda-forge/linux-64::libpng-1.6.39-h753d276_0 
+  libsqlite          conda-forge/linux-64::libsqlite-3.40.0-h753d276_1 
+  libssh2            conda-forge/linux-64::libssh2-1.10.0-hf14f497_3 
+  libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-12.2.0-h46fd767_19 
+  libtiff            conda-forge/linux-64::libtiff-4.5.0-ha587672_6 
+  libunistring       conda-forge/linux-64::libunistring-0.9.10-h7f98852_0 
+  libuuid            conda-forge/linux-64::libuuid-2.38.1-h0b41bf4_0 
+  libwebp-base       conda-forge/linux-64::libwebp-base-1.3.0-h0b41bf4_0 
+  libxcb             conda-forge/linux-64::libxcb-1.13-h7f98852_1004 
+  libzlib            conda-forge/linux-64::libzlib-1.2.13-h166bdaf_4 
+  lz4-c              conda-forge/linux-64::lz4-c-1.9.4-hcb278e6_0 
+  lzstring           conda-forge/noarch::lzstring-1.0.4-py_1001 
+  markdown           conda-forge/noarch::markdown-3.4.3-pyhd8ed1ab_0 
+  markdown-it-py     conda-forge/noarch::markdown-it-py-2.2.0-pyhd8ed1ab_0 
+  markupsafe         conda-forge/linux-64::markupsafe-2.1.2-py310h1fa729e_0 
+  matplotlib-base    conda-forge/linux-64::matplotlib-base-3.7.1-py310he60537e_0 
+  mdurl              conda-forge/noarch::mdurl-0.1.0-pyhd8ed1ab_0 
+  minifasta          conda-forge/noarch::minifasta-3.0.2-pyhd8ed1ab_0 
+  multiqc            bioconda/noarch::multiqc-1.14-pyhdfd78af_0 
+  munkres            conda-forge/noarch::munkres-1.1.4-pyh9f0ad1d_0 
+  ncurses            conda-forge/linux-64::ncurses-6.3-h27087fc_1 
+  networkx           conda-forge/noarch::networkx-3.1-pyhd8ed1ab_0 
+  numpy              conda-forge/linux-64::numpy-1.24.3-py310ha4c1d20_0 
+  openjpeg           conda-forge/linux-64::openjpeg-2.5.0-hfec8fc6_2 
+  openssl            conda-forge/linux-64::openssl-3.1.0-hd590300_2 
+  packaging          conda-forge/noarch::packaging-23.1-pyhd8ed1ab_0 
+  pcre               conda-forge/linux-64::pcre-8.45-h9c3ff4c_0 
+  perl               conda-forge/linux-64::perl-5.32.1-2_h7f98852_perl5 
+  perl-archive-tar   bioconda/noarch::perl-archive-tar-2.40-pl5321hdfd78af_0 
+  perl-carp          conda-forge/noarch::perl-carp-1.50-pl5321hd8ed1ab_0 
+  perl-common-sense  conda-forge/noarch::perl-common-sense-3.75-pl5321hd8ed1ab_0 
+  perl-compress-raw~ conda-forge/linux-64::perl-compress-raw-bzip2-2.201-pl5321h166bdaf_0 
+  perl-compress-raw~ conda-forge/linux-64::perl-compress-raw-zlib-2.202-pl5321h166bdaf_0 
+  perl-encode        conda-forge/linux-64::perl-encode-3.19-pl5321h166bdaf_0 
+  perl-exporter      conda-forge/noarch::perl-exporter-5.74-pl5321hd8ed1ab_0 
+  perl-exporter-tiny conda-forge/noarch::perl-exporter-tiny-1.002002-pl5321hd8ed1ab_0 
+  perl-extutils-mak~ conda-forge/noarch::perl-extutils-makemaker-7.70-pl5321hd8ed1ab_0 
+  perl-io-compress   bioconda/linux-64::perl-io-compress-2.201-pl5321h87f3376_0 
+  perl-io-zlib       bioconda/noarch::perl-io-zlib-1.14-pl5321hdfd78af_0 
+  perl-json          bioconda/noarch::perl-json-4.10-pl5321hdfd78af_0 
+  perl-json-xs       bioconda/linux-64::perl-json-xs-2.34-pl5321h9f5acd7_5 
+  perl-list-moreuti~ bioconda/noarch::perl-list-moreutils-0.430-pl5321hdfd78af_0 
+  perl-list-moreuti~ bioconda/linux-64::perl-list-moreutils-xs-0.430-pl5321hec16e2b_1 
+  perl-parent        conda-forge/noarch::perl-parent-0.241-pl5321hd8ed1ab_0 
+  perl-pathtools     conda-forge/linux-64::perl-pathtools-3.75-pl5321h166bdaf_0 
+  perl-scalar-list-~ conda-forge/linux-64::perl-scalar-list-utils-1.63-pl5321h166bdaf_0 
+  perl-storable      conda-forge/linux-64::perl-storable-3.15-pl5321h166bdaf_0 
+  perl-types-serial~ bioconda/noarch::perl-types-serialiser-1.01-pl5321hdfd78af_0 
+  pillow             conda-forge/linux-64::pillow-9.5.0-py310h065c6d2_0 
+  pip                conda-forge/noarch::pip-23.1.2-pyhd8ed1ab_0 
+  popt               conda-forge/linux-64::popt-1.16-h0b475e3_2002 
+  porechop           bioconda/linux-64::porechop-0.2.4-py310h30d9df9_3 
+  pthread-stubs      conda-forge/linux-64::pthread-stubs-0.4-h36c2ea0_1001 
+  pycparser          conda-forge/noarch::pycparser-2.21-pyhd8ed1ab_0 
+  pygments           conda-forge/noarch::pygments-2.15.1-pyhd8ed1ab_0 
+  pyopenssl          conda-forge/noarch::pyopenssl-23.1.1-pyhd8ed1ab_0 
+  pyparsing          conda-forge/noarch::pyparsing-3.0.9-pyhd8ed1ab_0 
+  pysocks            conda-forge/noarch::pysocks-1.7.1-pyha2e5f31_6 
+  python             conda-forge/linux-64::python-3.10.10-he550d4f_0_cpython 
+  python-dateutil    conda-forge/noarch::python-dateutil-2.8.2-pyhd8ed1ab_0 
+  python_abi         conda-forge/linux-64::python_abi-3.10-3_cp310 
+  pyyaml             conda-forge/linux-64::pyyaml-6.0-py310h5764c6d_5 
+  readline           conda-forge/linux-64::readline-8.2-h8228510_1 
+  requests           conda-forge/noarch::requests-2.29.0-pyhd8ed1ab_0 
+  rich               conda-forge/noarch::rich-13.3.5-pyhd8ed1ab_0 
+  rich-click         conda-forge/noarch::rich-click-1.6.1-pyhd8ed1ab_0 
+  rsync              conda-forge/linux-64::rsync-3.2.7-h70740c4_0 
+  setuptools         conda-forge/noarch::setuptools-67.7.2-pyhd8ed1ab_0 
+  simplejson         conda-forge/linux-64::simplejson-3.19.1-py310h1fa729e_0 
+  six                conda-forge/noarch::six-1.16.0-pyh6c4a22f_0 
+  spectra            conda-forge/noarch::spectra-0.0.11-py_1 
+  tar                conda-forge/linux-64::tar-1.34-hb2e2bae_1 
+  tk                 conda-forge/linux-64::tk-8.6.12-h27826a3_0 
+  typing_extensions  conda-forge/noarch::typing_extensions-4.5.0-pyha770c72_0 
+  tzdata             conda-forge/noarch::tzdata-2023c-h71feb2d_0 
+  unicodedata2       conda-forge/linux-64::unicodedata2-15.0.0-py310h5764c6d_0 
+  urllib3            conda-forge/noarch::urllib3-1.26.15-pyhd8ed1ab_0 
+  wget               conda-forge/linux-64::wget-1.20.3-ha35d2d1_1 
+  wheel              conda-forge/noarch::wheel-0.40.0-pyhd8ed1ab_0 
+  xorg-libxau        conda-forge/linux-64::xorg-libxau-1.0.9-h7f98852_0 
+  xorg-libxdmcp      conda-forge/linux-64::xorg-libxdmcp-1.1.3-h7f98852_0 
+  xxhash             conda-forge/linux-64::xxhash-0.8.0-h7f98852_3 
+  xz                 conda-forge/linux-64::xz-5.2.6-h166bdaf_0 
+  yaml               conda-forge/linux-64::yaml-0.2.5-h7f98852_2 
+  zipp               conda-forge/noarch::zipp-3.15.0-pyhd8ed1ab_0 
+  zlib               conda-forge/linux-64::zlib-1.2.13-h166bdaf_4 
+  zstd               conda-forge/linux-64::zstd-1.5.2-h3eb15da_6 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+                                                                                                                                              
+Preparing transaction: done                                                                                                                   
+Verifying transaction: done                                                                                                                   
+Executing transaction: -                                                                                                                      
+Krona installed.  You still need to manually update the taxonomy                                                                              
+databases before Krona can generate taxonomic reports.  The update                                                                            
+script is ktUpdateTaxonomy.sh.  The default location for storing                                                                              
+taxonomic databases is /home/alakh/miniconda3/envs/16S/opt/krona/taxonomy                                                                     
+                                                                                                                                              
+If you would like the taxonomic data stored elsewhere, simply replace                                                                         
+this directory with a symlink.  For example:                                                                                                  
+                                                                                                                                              
+rm -rf /home/alakh/miniconda3/envs/16S/opt/krona/taxonomy                                                                                     
+mkdir /path/on/big/disk/taxonomy                                                                                                              
+ln -s /path/on/big/disk/taxonomy /home/alakh/miniconda3/envs/16S/opt/krona/taxonomy                                                           
+ktUpdateTaxonomy.sh                                                                                                                           
+                                                                                                                                              
+                                                                                                                                              
+done                                                                                                                                          
+#                                                                                                                                             
+# To activate this environment, use                                                                                                           
+#                                                                                                                                             
+#     $ conda activate 16S                                                                                                                    
+#                                                                                                                                             
+# To deactivate an active environment, use                                                                                                    
+#                                                                                                                                             
+#     $ conda deactivate                                                                                                                      
+                                                                                                                                              
+(base) alakh@alakh-HP-Laptop-15-bs0xx:~$ conda activate 16S                                                                                   
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~$ mkdir 16S                                                                                             
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~$ cd 16S                                                                                                
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ nano kronadb.txt
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls                                                                                                
+kronadb.txt                                                                                                                                   
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ cat kronadb.txt
+/home/alakh/miniconda3/envs/16S/opt/krona/taxonomy                                                                                            
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls                                                                                                
+kronadb.txt           
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ktUpdateTaxonomy.sh 
+Fetching taxdump.tar.gz...
+   Fetching checksum...
+   Checksum for taxdump.tar.gz matches server.
+Extracting taxonomy...
+
+Cleaning up...
+
+Finished.
+
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ nano download_data.sh
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+download_data.sh  kronadb.txt
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ chmod +x download_data.sh
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+download_data.sh  kronadb.txt
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ./download_data.sh 
+--2023-05-02 17:01:58--  https://zenodo.org/record/4274812/files/bulk_bottom.fastq.gz
+Resolving zenodo.org (zenodo.org)... 188.185.124.72
+Connecting to zenodo.org (zenodo.org)|188.185.124.72|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40084254 (38M) [application/octet-stream]
+Saving to: ‘bulk_bottom.fastq.gz’
+
+bulk_bottom.fastq.gz                100%[=================================================================>]  38.23M   382KB/s    in 2m 11s  
+
+2023-05-02 17:04:11 (298 KB/s) - ‘bulk_bottom.fastq.gz’ saved [40084254/40084254]
+
+--2023-05-02 17:04:11--  https://zenodo.org/record/4274812/files/bulk_top.fastq.gz
+Resolving zenodo.org (zenodo.org)... 188.185.124.72
+Connecting to zenodo.org (zenodo.org)|188.185.124.72|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40079758 (38M) [application/octet-stream]
+Saving to: ‘bulk_top.fastq.gz’
+
+bulk_top.fastq.gz                   100%[=================================================================>]  38.22M   346KB/s    in 2m 3s   
+
+2023-05-02 17:06:17 (319 KB/s) - ‘bulk_top.fastq.gz’ saved [40079758/40079758]
+
+--2023-05-02 17:06:17--  https://zenodo.org/record/4274812/files/rhizosphere_bottom.fastq.gz
+Resolving zenodo.org (zenodo.org)... 188.185.124.72
+Connecting to zenodo.org (zenodo.org)|188.185.124.72|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 39716979 (38M) [application/octet-stream]
+Saving to: ‘rhizosphere_bottom.fastq.gz’
+
+rhizosphere_bottom.fastq.gz         100%[=================================================================>]  37.88M   366KB/s    in 1m 52s  
+
+2023-05-02 17:08:10 (346 KB/s) - ‘rhizosphere_bottom.fastq.gz’ saved [39716979/39716979]
+
+--2023-05-02 17:08:10--  https://zenodo.org/record/4274812/files/rhizosphere_top.fastq.gz
+Resolving zenodo.org (zenodo.org)... 188.185.124.72
+Connecting to zenodo.org (zenodo.org)|188.185.124.72|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 39614513 (38M) [application/octet-stream]
+Saving to: ‘rhizosphere_top.fastq.gz’
+
+rhizosphere_top.fastq.gz            100%[=================================================================>]  37.78M   550KB/s    in 45s     
+
+2023-05-02 17:08:57 (864 KB/s) - ‘rhizosphere_top.fastq.gz’ saved [39614513/39614513]
+
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+bulk_bottom.fastq.gz  bulk_top.fastq.gz  download_data.sh  kronadb.txt  rhizosphere_bottom.fastq.gz  rhizosphere_top.fastq.gz
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ mkdir data
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ mv *.fastq.gz data/
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+data  download_data.sh  kronadb.txt
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls d
+data/             download_data.sh  
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls data/
+bulk_bottom.fastq.gz  bulk_top.fastq.gz  rhizosphere_bottom.fastq.gz  rhizosphere_top.fastq.gz
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ fastqc data/*.fastq.gz
+Command 'fastqc' not found, but can be installed with:
+sudo apt install fastqc
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ sudo apt install fastqc
+[sudo] password for alakh: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates-java default-jre default-jre-headless fonts-dejavu-extra java-common libaec0 libapache-pom-java libargs4j-java
+  libatk-wrapper-java libatk-wrapper-java-jni libcommons-compress-java libcommons-io-java libcommons-jexl2-java libcommons-lang3-java
+  libcommons-logging-java libcommons-math3-java libcommons-parent-java libfindbin-libs-perl libhdf5-103-1 libhtsjdk-java libjbzip2-java
+  libjson-simple-java libngs-java libngs-sdk-dev libngs-sdk2 libsis-base-java libsis-base-jni libsis-jhdf5-java libsis-jhdf5-jni
+  libsnappy-java libsnappy-jni libsnappy1v5 libsz2 openjdk-11-jre openjdk-11-jre-headless
+Suggested packages:
+  libxz-java libcommons-io-java-doc libcommons-lang3-java-doc libavalon-framework-java libcommons-logging-java-doc libexcalibur-logkit-java
+  liblog4j1.2-java picard-tools libjson-simple-doc fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei | fonts-wqy-zenhei
+The following NEW packages will be installed:
+  ca-certificates-java default-jre default-jre-headless fastqc fonts-dejavu-extra java-common libaec0 libapache-pom-java libargs4j-java
+  libatk-wrapper-java libatk-wrapper-java-jni libcommons-compress-java libcommons-io-java libcommons-jexl2-java libcommons-lang3-java
+  libcommons-logging-java libcommons-math3-java libcommons-parent-java libfindbin-libs-perl libhdf5-103-1 libhtsjdk-java libjbzip2-java
+  libjson-simple-java libngs-java libngs-sdk-dev libngs-sdk2 libsis-base-java libsis-base-jni libsis-jhdf5-java libsis-jhdf5-jni
+  libsnappy-java libsnappy-jni libsnappy1v5 libsz2 openjdk-11-jre openjdk-11-jre-headless
+0 upgraded, 36 newly installed, 0 to remove and 2 not upgraded.
+Need to get 53.3 MB of archives.
+After this operation, 196 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 java-common all 0.72build2 [6,782 B]
+Get:2 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 openjdk-11-jre-headless amd64 11.0.18+10-0ubuntu1~22.04 [41.6 MB]
+Get:3 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 default-jre-headless amd64 2:1.11-72build2 [3,042 B]                              
+Get:4 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 ca-certificates-java all 20190909ubuntu1.1 [12.0 kB]                      
+Get:5 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 openjdk-11-jre amd64 11.0.18+10-0ubuntu1~22.04 [193 kB]                   
+Get:6 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 default-jre amd64 2:1.11-72build2 [896 B]                                         
+Get:7 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-math3-java all 3.6.1-3 [2,016 kB]                                  
+Get:8 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libjbzip2-java all 0.9.1-7 [42.8 kB]                                          
+Get:9 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libapache-pom-java all 18-1 [4,720 B]                                         
+Get:10 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-parent-java all 43-1 [10.8 kB]                                    
+Get:11 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-compress-java all 1.21-1 [575 kB]                                 
+Get:12 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-logging-java all 1.2-2 [60.3 kB]                                  
+Get:13 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-jexl2-java all 2.1.1-5 [251 kB]                                   
+Get:14 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libjson-simple-java all 2.3.0-1 [61.0 kB]                                    
+Get:15 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libngs-sdk2 amd64 2.11.2-3 [65.6 kB]                                         
+Get:16 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libngs-sdk-dev amd64 2.11.2-3 [111 kB]                                       
+Get:17 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libngs-java amd64 2.11.2-3 [75.8 kB]                                         
+Get:18 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 libsnappy1v5 amd64 1.1.8-1build3 [17.5 kB]                                       
+Get:19 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsnappy-jni amd64 1.1.8.3-1 [6,756 B]                                      
+Get:20 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsnappy-java all 1.1.8.3-1 [93.9 kB]                                       
+Get:21 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libhtsjdk-java all 2.24.1+dfsg-1 [1,644 kB]                                  
+Get:22 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libfindbin-libs-perl all 2.190.02-1 [23.2 kB]                                
+Get:23 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libargs4j-java all 2.33-1.1 [137 kB]                                         
+Get:24 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-io-java all 2.11.0-2 [297 kB]                                     
+Get:25 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-lang3-java all 3.11-1 [526 kB]                                    
+Get:26 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsis-base-jni amd64 18.09~pre1+git20180928.45fbd31+dfsg-3 [12.7 kB]        
+Get:27 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsis-base-java all 18.09~pre1+git20180928.45fbd31+dfsg-3 [96.4 kB]         
+Get:28 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libaec0 amd64 1.0.6-1 [20.1 kB]                                              
+Get:29 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsz2 amd64 1.0.6-1 [5,354 B]                                               
+Get:30 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libhdf5-103-1 amd64 1.10.7+repack-4ubuntu2 [1,295 kB]                        
+Get:31 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsis-jhdf5-jni amd64 19.04.0+dfsg-4 [96.6 kB]                              
+Get:32 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsis-jhdf5-java all 19.04.0+dfsg-4 [1,490 kB]                              
+Get:33 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 fastqc all 0.11.9+dfsg-5 [370 kB]                                            
+Get:34 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 fonts-dejavu-extra all 2.37-2build1 [2,041 kB]                                   
+Get:35 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 libatk-wrapper-java all 0.38.0-5build1 [53.1 kB]                                 
+Get:36 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 libatk-wrapper-java-jni amd64 0.38.0-5build1 [49.0 kB]                           
+Fetched 53.3 MB in 28s (1,884 kB/s)                                                                                                          
+Extracting templates from packages: 100%
+Selecting previously unselected package java-common.
+(Reading database ... 205076 files and directories currently installed.)
+Preparing to unpack .../00-java-common_0.72build2_all.deb ...
+Unpacking java-common (0.72build2) ...
+Selecting previously unselected package openjdk-11-jre-headless:amd64.
+Preparing to unpack .../01-openjdk-11-jre-headless_11.0.18+10-0ubuntu1~22.04_amd64.deb ...
+Unpacking openjdk-11-jre-headless:amd64 (11.0.18+10-0ubuntu1~22.04) ...
+Selecting previously unselected package default-jre-headless.
+Preparing to unpack .../02-default-jre-headless_2%3a1.11-72build2_amd64.deb ...
+Unpacking default-jre-headless (2:1.11-72build2) ...
+Selecting previously unselected package ca-certificates-java.
+Preparing to unpack .../03-ca-certificates-java_20190909ubuntu1.1_all.deb ...
+Unpacking ca-certificates-java (20190909ubuntu1.1) ...
+Selecting previously unselected package openjdk-11-jre:amd64.
+Preparing to unpack .../04-openjdk-11-jre_11.0.18+10-0ubuntu1~22.04_amd64.deb ...
+Unpacking openjdk-11-jre:amd64 (11.0.18+10-0ubuntu1~22.04) ...
+Selecting previously unselected package default-jre.
+Preparing to unpack .../05-default-jre_2%3a1.11-72build2_amd64.deb ...
+Unpacking default-jre (2:1.11-72build2) ...
+Selecting previously unselected package libcommons-math3-java.
+Preparing to unpack .../06-libcommons-math3-java_3.6.1-3_all.deb ...
+Unpacking libcommons-math3-java (3.6.1-3) ...
+Selecting previously unselected package libjbzip2-java.
+Preparing to unpack .../07-libjbzip2-java_0.9.1-7_all.deb ...
+Unpacking libjbzip2-java (0.9.1-7) ...
+Selecting previously unselected package libapache-pom-java.
+Preparing to unpack .../08-libapache-pom-java_18-1_all.deb ...
+Unpacking libapache-pom-java (18-1) ...
+Selecting previously unselected package libcommons-parent-java.
+Preparing to unpack .../09-libcommons-parent-java_43-1_all.deb ...
+Unpacking libcommons-parent-java (43-1) ...
+Selecting previously unselected package libcommons-compress-java.
+Preparing to unpack .../10-libcommons-compress-java_1.21-1_all.deb ...
+Unpacking libcommons-compress-java (1.21-1) ...
+Selecting previously unselected package libcommons-logging-java.
+Preparing to unpack .../11-libcommons-logging-java_1.2-2_all.deb ...
+Unpacking libcommons-logging-java (1.2-2) ...
+Selecting previously unselected package libcommons-jexl2-java.
+Preparing to unpack .../12-libcommons-jexl2-java_2.1.1-5_all.deb ...
+Unpacking libcommons-jexl2-java (2.1.1-5) ...
+Selecting previously unselected package libjson-simple-java.
+Preparing to unpack .../13-libjson-simple-java_2.3.0-1_all.deb ...
+Unpacking libjson-simple-java (2.3.0-1) ...
+Selecting previously unselected package libngs-sdk2:amd64.
+Preparing to unpack .../14-libngs-sdk2_2.11.2-3_amd64.deb ...
+Unpacking libngs-sdk2:amd64 (2.11.2-3) ...
+Selecting previously unselected package libngs-sdk-dev:amd64.
+Preparing to unpack .../15-libngs-sdk-dev_2.11.2-3_amd64.deb ...
+Unpacking libngs-sdk-dev:amd64 (2.11.2-3) ...
+Selecting previously unselected package libngs-java:amd64.
+Preparing to unpack .../16-libngs-java_2.11.2-3_amd64.deb ...
+Unpacking libngs-java:amd64 (2.11.2-3) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../17-libsnappy1v5_1.1.8-1build3_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.8-1build3) ...
+Selecting previously unselected package libsnappy-jni.
+Preparing to unpack .../18-libsnappy-jni_1.1.8.3-1_amd64.deb ...
+Unpacking libsnappy-jni (1.1.8.3-1) ...
+Selecting previously unselected package libsnappy-java.
+Preparing to unpack .../19-libsnappy-java_1.1.8.3-1_all.deb ...
+Unpacking libsnappy-java (1.1.8.3-1) ...
+Selecting previously unselected package libhtsjdk-java.
+Preparing to unpack .../20-libhtsjdk-java_2.24.1+dfsg-1_all.deb ...
+Unpacking libhtsjdk-java (2.24.1+dfsg-1) ...
+Selecting previously unselected package libfindbin-libs-perl.
+Preparing to unpack .../21-libfindbin-libs-perl_2.190.02-1_all.deb ...
+Unpacking libfindbin-libs-perl (2.190.02-1) ...
+Selecting previously unselected package libargs4j-java.
+Preparing to unpack .../22-libargs4j-java_2.33-1.1_all.deb ...
+Unpacking libargs4j-java (2.33-1.1) ...
+Selecting previously unselected package libcommons-io-java.
+Preparing to unpack .../23-libcommons-io-java_2.11.0-2_all.deb ...
+Unpacking libcommons-io-java (2.11.0-2) ...
+Selecting previously unselected package libcommons-lang3-java.
+Preparing to unpack .../24-libcommons-lang3-java_3.11-1_all.deb ...
+Unpacking libcommons-lang3-java (3.11-1) ...
+Selecting previously unselected package libsis-base-jni.
+Preparing to unpack .../25-libsis-base-jni_18.09~pre1+git20180928.45fbd31+dfsg-3_amd64.deb ...
+Unpacking libsis-base-jni (18.09~pre1+git20180928.45fbd31+dfsg-3) ...
+Selecting previously unselected package libsis-base-java.
+Preparing to unpack .../26-libsis-base-java_18.09~pre1+git20180928.45fbd31+dfsg-3_all.deb ...
+Unpacking libsis-base-java (18.09~pre1+git20180928.45fbd31+dfsg-3) ...
+Selecting previously unselected package libaec0:amd64.
+Preparing to unpack .../27-libaec0_1.0.6-1_amd64.deb ...
+Unpacking libaec0:amd64 (1.0.6-1) ...
+Selecting previously unselected package libsz2:amd64.
+Preparing to unpack .../28-libsz2_1.0.6-1_amd64.deb ...
+Unpacking libsz2:amd64 (1.0.6-1) ...
+Selecting previously unselected package libhdf5-103-1:amd64.
+Preparing to unpack .../29-libhdf5-103-1_1.10.7+repack-4ubuntu2_amd64.deb ...
+Unpacking libhdf5-103-1:amd64 (1.10.7+repack-4ubuntu2) ...
+Selecting previously unselected package libsis-jhdf5-jni.
+Preparing to unpack .../30-libsis-jhdf5-jni_19.04.0+dfsg-4_amd64.deb ...
+Unpacking libsis-jhdf5-jni (19.04.0+dfsg-4) ...
+Selecting previously unselected package libsis-jhdf5-java.
+Preparing to unpack .../31-libsis-jhdf5-java_19.04.0+dfsg-4_all.deb ...
+Unpacking libsis-jhdf5-java (19.04.0+dfsg-4) ...
+Selecting previously unselected package fastqc.
+Preparing to unpack .../32-fastqc_0.11.9+dfsg-5_all.deb ...
+Unpacking fastqc (0.11.9+dfsg-5) ...
+Selecting previously unselected package fonts-dejavu-extra.
+Preparing to unpack .../33-fonts-dejavu-extra_2.37-2build1_all.deb ...
+Unpacking fonts-dejavu-extra (2.37-2build1) ...
+Selecting previously unselected package libatk-wrapper-java.
+Preparing to unpack .../34-libatk-wrapper-java_0.38.0-5build1_all.deb ...
+Unpacking libatk-wrapper-java (0.38.0-5build1) ...
+Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+Preparing to unpack .../35-libatk-wrapper-java-jni_0.38.0-5build1_amd64.deb ...
+Unpacking libatk-wrapper-java-jni:amd64 (0.38.0-5build1) ...
+Setting up java-common (0.72build2) ...
+Setting up libngs-sdk2:amd64 (2.11.2-3) ...
+Setting up libfindbin-libs-perl (2.190.02-1) ...
+Setting up libjson-simple-java (2.3.0-1) ...
+Setting up libaec0:amd64 (1.0.6-1) ...
+Setting up libsnappy1v5:amd64 (1.1.8-1build3) ...
+Setting up libsis-base-jni (18.09~pre1+git20180928.45fbd31+dfsg-3) ...
+Setting up libapache-pom-java (18-1) ...
+Setting up libjbzip2-java (0.9.1-7) ...
+Setting up libngs-sdk-dev:amd64 (2.11.2-3) ...
+Setting up fonts-dejavu-extra (2.37-2build1) ...
+Setting up libcommons-math3-java (3.6.1-3) ...
+Setting up libatk-wrapper-java (0.38.0-5build1) ...
+Setting up libngs-java:amd64 (2.11.2-3) ...
+Setting up libsnappy-jni (1.1.8.3-1) ...
+Setting up libargs4j-java (2.33-1.1) ...
+Setting up libsz2:amd64 (1.0.6-1) ...
+Setting up libcommons-parent-java (43-1) ...
+Setting up libcommons-logging-java (1.2-2) ...
+Setting up libatk-wrapper-java-jni:amd64 (0.38.0-5build1) ...
+Setting up libcommons-jexl2-java (2.1.1-5) ...
+Setting up libcommons-lang3-java (3.11-1) ...
+Setting up libhdf5-103-1:amd64 (1.10.7+repack-4ubuntu2) ...
+Setting up libsis-jhdf5-jni (19.04.0+dfsg-4) ...
+Setting up libsnappy-java (1.1.8.3-1) ...
+Setting up libcommons-compress-java (1.21-1) ...
+Setting up libcommons-io-java (2.11.0-2) ...
+Setting up libsis-base-java (18.09~pre1+git20180928.45fbd31+dfsg-3) ...
+Setting up libhtsjdk-java (2.24.1+dfsg-1) ...
+Setting up libsis-jhdf5-java (19.04.0+dfsg-4) ...
+Setting up default-jre-headless (2:1.11-72build2) ...
+Setting up openjdk-11-jre-headless:amd64 (11.0.18+10-0ubuntu1~22.04) ...
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/jjs to provide /usr/bin/jjs (jjs) in auto mode
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/pack200 to provide /usr/bin/pack200 (pack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/bin/unpack200 to provide /usr/bin/unpack200 (unpack200) in auto mode
+update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+Setting up openjdk-11-jre:amd64 (11.0.18+10-0ubuntu1~22.04) ...
+Setting up default-jre (2:1.11-72build2) ...
+Setting up ca-certificates-java (20190909ubuntu1.1) ...
+head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory
+Adding debian:Certigna_Root_CA.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+Adding debian:GLOBALTRUST_2020.pem
+Adding debian:TWCA_Root_Certification_Authority.pem
+Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+Adding debian:Certum_Trusted_Network_CA_2.pem
+Adding debian:certSIGN_ROOT_CA.pem
+Adding debian:Comodo_AAA_Services_root.pem
+Adding debian:TWCA_Global_Root_CA.pem
+Adding debian:DigiCert_Global_Root_G2.pem
+Adding debian:DigiCert_Assured_ID_Root_CA.pem
+Adding debian:DigiCert_Trusted_Root_G4.pem
+Adding debian:GlobalSign_Root_E46.pem
+Adding debian:Hongkong_Post_Root_CA_1.pem
+Adding debian:QuoVadis_Root_CA_1_G3.pem
+Adding debian:QuoVadis_Root_CA_2.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Adding debian:CFCA_EV_ROOT.pem
+Adding debian:emSign_ECC_Root_CA_-_G3.pem
+Adding debian:Certigna.pem
+Adding debian:EC-ACC.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:USERTrust_RSA_Certification_Authority.pem
+Adding debian:Certum_Trusted_Network_CA.pem
+Adding debian:COMODO_Certification_Authority.pem
+Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:GlobalSign_Root_R46.pem
+Adding debian:GlobalSign_Root_CA_-_R6.pem
+Adding debian:DigiCert_Global_Root_G3.pem
+Adding debian:Network_Solutions_Certificate_Authority.pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+Adding debian:AffirmTrust_Premium.pem
+Adding debian:Certum_Trusted_Root_CA.pem
+Adding debian:Atos_TrustedRoot_2011.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:GTS_Root_R3.pem
+Adding debian:QuoVadis_Root_CA_3.pem
+Adding debian:certSIGN_Root_CA_G2.pem
+Adding debian:Cybertrust_Global_Root.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+Adding debian:SwissSign_Gold_CA_-_G2.pem
+Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+Adding debian:Security_Communication_Root_CA.pem
+Adding debian:UCA_Extended_Validation_Root.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+Adding debian:SecureSign_RootCA11.pem
+Adding debian:Baltimore_CyberTrust_Root.pem
+Adding debian:Starfield_Class_2_CA.pem
+Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+Adding debian:Hongkong_Post_Root_CA_3.pem
+Adding debian:Buypass_Class_2_Root_CA.pem
+Adding debian:Izenpe.com.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+Adding debian:Amazon_Root_CA_3.pem
+Adding debian:DigiCert_Global_Root_CA.pem
+Adding debian:XRamp_Global_CA_Root.pem
+Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Adding debian:UCA_Global_G2_Root.pem
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:SZAFIR_ROOT_CA2.pem
+Adding debian:AC_RAIZ_FNMT-RCM.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:SecureTrust_CA.pem
+Adding debian:AffirmTrust_Premium_ECC.pem
+Adding debian:ePKI_Root_Certification_Authority.pem
+Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+Adding debian:AffirmTrust_Commercial.pem
+Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+Adding debian:Secure_Global_CA.pem
+Adding debian:NAVER_Global_Root_Certification_Authority.pem
+Adding debian:GTS_Root_R1.pem
+Adding debian:SwissSign_Silver_CA_-_G2.pem
+Adding debian:Certum_EC-384_CA.pem
+Adding debian:GlobalSign_Root_CA_-_R3.pem
+Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:AffirmTrust_Networking.pem
+Adding debian:Amazon_Root_CA_1.pem
+Adding debian:Amazon_Root_CA_2.pem
+Adding debian:ssl-cert-snakeoil.pem
+Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Adding debian:Amazon_Root_CA_4.pem
+Adding debian:GlobalSign_Root_CA.pem
+Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Adding debian:TeliaSonera_Root_CA_v1.pem
+Adding debian:Go_Daddy_Class_2_CA.pem
+Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+Adding debian:ANF_Secure_Server_Root_CA.pem
+Adding debian:emSign_Root_CA_-_G1.pem
+Adding debian:Buypass_Class_3_Root_CA.pem
+Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+Adding debian:emSign_ECC_Root_CA_-_C3.pem
+Adding debian:COMODO_ECC_Certification_Authority.pem
+Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+Adding debian:emSign_Root_CA_-_C1.pem
+Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+Adding debian:GTS_Root_R4.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Adding debian:COMODO_RSA_Certification_Authority.pem
+Adding debian:Entrust_Root_Certification_Authority.pem
+Adding debian:GlobalSign_Root_CA_-_R2.pem
+Adding debian:E-Tugra_Certification_Authority.pem
+Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:Staat_der_Nederlanden_EV_Root_CA.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+Adding debian:ACCVRAIZ1.pem
+Adding debian:ISRG_Root_X1.pem
+Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G4.pem
+Adding debian:USERTrust_ECC_Certification_Authority.pem
+Adding debian:CA_Disig_Root_R2.pem
+Adding debian:Trustwave_Global_Certification_Authority.pem
+Adding debian:e-Szigno_Root_CA_2017.pem
+Adding debian:GTS_Root_R2.pem
+done.
+Setting up fastqc (0.11.9+dfsg-5) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for ca-certificates (20211016ubuntu0.22.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+
+done.
+done.
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for fontconfig (2.13.1-4.2ubuntu5) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ fastqc data/*.fastq.gz
+Started analysis of bulk_bottom.fastq.gz
+Approx 5% complete for bulk_bottom.fastq.gz
+Approx 10% complete for bulk_bottom.fastq.gz
+Approx 15% complete for bulk_bottom.fastq.gz
+Approx 20% complete for bulk_bottom.fastq.gz
+Approx 25% complete for bulk_bottom.fastq.gz
+Approx 30% complete for bulk_bottom.fastq.gz
+Approx 35% complete for bulk_bottom.fastq.gz
+Approx 40% complete for bulk_bottom.fastq.gz
+Approx 45% complete for bulk_bottom.fastq.gz
+Approx 50% complete for bulk_bottom.fastq.gz
+Approx 55% complete for bulk_bottom.fastq.gz
+Approx 60% complete for bulk_bottom.fastq.gz
+Approx 65% complete for bulk_bottom.fastq.gz
+Approx 70% complete for bulk_bottom.fastq.gz
+Approx 75% complete for bulk_bottom.fastq.gz
+Approx 80% complete for bulk_bottom.fastq.gz
+Approx 85% complete for bulk_bottom.fastq.gz
+Approx 90% complete for bulk_bottom.fastq.gz
+Approx 95% complete for bulk_bottom.fastq.gz
+Analysis complete for bulk_bottom.fastq.gz
+Started analysis of bulk_top.fastq.gz
+Approx 5% complete for bulk_top.fastq.gz
+Approx 10% complete for bulk_top.fastq.gz
+Approx 15% complete for bulk_top.fastq.gz
+Approx 20% complete for bulk_top.fastq.gz
+Approx 25% complete for bulk_top.fastq.gz
+Approx 30% complete for bulk_top.fastq.gz
+Approx 35% complete for bulk_top.fastq.gz
+Approx 40% complete for bulk_top.fastq.gz
+Approx 45% complete for bulk_top.fastq.gz
+Approx 50% complete for bulk_top.fastq.gz
+Approx 55% complete for bulk_top.fastq.gz
+Approx 60% complete for bulk_top.fastq.gz
+Approx 65% complete for bulk_top.fastq.gz
+Approx 70% complete for bulk_top.fastq.gz
+Approx 75% complete for bulk_top.fastq.gz
+Approx 80% complete for bulk_top.fastq.gz
+Approx 85% complete for bulk_top.fastq.gz
+Approx 90% complete for bulk_top.fastq.gz
+Approx 95% complete for bulk_top.fastq.gz
+Analysis complete for bulk_top.fastq.gz
+Started analysis of rhizosphere_bottom.fastq.gz
+Approx 5% complete for rhizosphere_bottom.fastq.gz
+Approx 10% complete for rhizosphere_bottom.fastq.gz
+Approx 15% complete for rhizosphere_bottom.fastq.gz
+Approx 20% complete for rhizosphere_bottom.fastq.gz
+Approx 25% complete for rhizosphere_bottom.fastq.gz
+Approx 30% complete for rhizosphere_bottom.fastq.gz
+Approx 35% complete for rhizosphere_bottom.fastq.gz
+Approx 40% complete for rhizosphere_bottom.fastq.gz
+Approx 45% complete for rhizosphere_bottom.fastq.gz
+Approx 50% complete for rhizosphere_bottom.fastq.gz
+Approx 55% complete for rhizosphere_bottom.fastq.gz
+Approx 60% complete for rhizosphere_bottom.fastq.gz
+Approx 65% complete for rhizosphere_bottom.fastq.gz
+Approx 70% complete for rhizosphere_bottom.fastq.gz
+Approx 75% complete for rhizosphere_bottom.fastq.gz
+Approx 80% complete for rhizosphere_bottom.fastq.gz
+Approx 85% complete for rhizosphere_bottom.fastq.gz
+Approx 90% complete for rhizosphere_bottom.fastq.gz
+Approx 95% complete for rhizosphere_bottom.fastq.gz
+Analysis complete for rhizosphere_bottom.fastq.gz
+Started analysis of rhizosphere_top.fastq.gz
+Approx 5% complete for rhizosphere_top.fastq.gz
+Approx 10% complete for rhizosphere_top.fastq.gz
+Approx 15% complete for rhizosphere_top.fastq.gz
+Approx 20% complete for rhizosphere_top.fastq.gz
+Approx 25% complete for rhizosphere_top.fastq.gz
+Approx 30% complete for rhizosphere_top.fastq.gz
+Approx 35% complete for rhizosphere_top.fastq.gz
+Approx 40% complete for rhizosphere_top.fastq.gz
+Approx 45% complete for rhizosphere_top.fastq.gz
+Approx 50% complete for rhizosphere_top.fastq.gz
+Approx 55% complete for rhizosphere_top.fastq.gz
+Approx 60% complete for rhizosphere_top.fastq.gz
+Approx 65% complete for rhizosphere_top.fastq.gz
+Approx 70% complete for rhizosphere_top.fastq.gz
+Approx 75% complete for rhizosphere_top.fastq.gz
+Approx 80% complete for rhizosphere_top.fastq.gz
+Approx 85% complete for rhizosphere_top.fastq.gz
+Approx 90% complete for rhizosphere_top.fastq.gz
+Approx 95% complete for rhizosphere_top.fastq.gz
+Analysis complete for rhizosphere_top.fastq.gz
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls data/
+bulk_bottom_fastqc.html  bulk_top_fastqc.html  rhizosphere_bottom_fastqc.html  rhizosphere_top_fastqc.html
+bulk_bottom_fastqc.zip   bulk_top_fastqc.zip   rhizosphere_bottom_fastqc.zip   rhizosphere_top_fastqc.zip
+bulk_bottom.fastq.gz     bulk_top.fastq.gz     rhizosphere_bottom.fastq.gz     rhizosphere_top.fastq.gz
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ multiqc data/*_fastqc*
+
+  /// MultiQC 🔍 | v1.14
+
+|           multiqc | Search path : /home/alakh/16S/data/bulk_bottom_fastqc.html
+|           multiqc | Search path : /home/alakh/16S/data/bulk_bottom_fastqc.zip
+|           multiqc | Search path : /home/alakh/16S/data/bulk_top_fastqc.html
+|           multiqc | Search path : /home/alakh/16S/data/bulk_top_fastqc.zip
+|           multiqc | Search path : /home/alakh/16S/data/rhizosphere_bottom_fastqc.html
+|           multiqc | Search path : /home/alakh/16S/data/rhizosphere_bottom_fastqc.zip
+|           multiqc | Search path : /home/alakh/16S/data/rhizosphere_top_fastqc.html
+|           multiqc | Search path : /home/alakh/16S/data/rhizosphere_top_fastqc.zip
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 8/8  
+|            fastqc | Found 4 reports
+|           multiqc | Compressing plot data
+|           multiqc | Report      : multiqc_report.html
+|           multiqc | Data        : multiqc_data
+|           multiqc | MultiQC complete
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+data  download_data.sh  kronadb.txt  multiqc_data  multiqc_report.html
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls data/
+bulk_bottom_fastqc.html  bulk_top_fastqc.html  rhizosphere_bottom_fastqc.html  rhizosphere_top_fastqc.html
+bulk_bottom_fastqc.zip   bulk_top_fastqc.zip   rhizosphere_bottom_fastqc.zip   rhizosphere_top_fastqc.zip
+bulk_bottom.fastq.gz     bulk_top.fastq.gz     rhizosphere_bottom.fastq.gz     rhizosphere_top.fastq.gz
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls data/*.fastq.gz
+data/bulk_bottom.fastq.gz  data/bulk_top.fastq.gz  data/rhizosphere_bottom.fastq.gz  data/rhizosphere_top.fastq.gz
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ nano trim_reads.sh
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ chmod +x trim_reads.sh 
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+data  download_data.sh  kronadb.txt  multiqc_data  multiqc_report.html  trim_reads.sh
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ./trim_reads.sh 
+
+Loading reads
+data/bulk_bottom.fastq.gz
+29,657 reads loaded
+
+
+Looking for known adapter sets
+10,000 / 10,000 (100.0%)
+                                        Best               
+                                        read       Best    
+                                        start      read end
+  Set                                   %ID        %ID     
+  SQK-NSK007                                96.6       78.3
+  Rapid                                     64.9        0.0
+  RBK004_upstream                           81.6        0.0
+  SQK-MAP006                                96.4      100.0
+  SQK-MAP006 short                         100.0      100.0
+  PCR adapters 1                           100.0      100.0
+  PCR adapters 2                           100.0      100.0
+  PCR adapters 3                           100.0      100.0
+  1D^2 part 1                               69.0       75.0
+  1D^2 part 2                               94.1       93.5
+  cDNA SSP                                  86.8       85.0
+  Barcode 1 (reverse)                       76.9       75.0
+  Barcode 2 (reverse)                       72.0       74.1
+  Barcode 3 (reverse)                       76.0       75.0
+  Barcode 4 (reverse)                       70.8       76.0
+  Barcode 5 (reverse)                       73.1       75.0
+  Barcode 6 (reverse)                       73.1       74.1
+  Barcode 7 (reverse)                       75.0       79.2
+  Barcode 8 (reverse)                       79.2       75.0
+  Barcode 9 (reverse)                       91.7       96.0
+  Barcode 10 (reverse)                      73.1       75.0
+  Barcode 11 (reverse)                      72.0       75.0
+  Barcode 12 (reverse)                      75.0       76.9
+  Barcode 1 (forward)                       76.0       80.0
+  Barcode 2 (forward)                       80.0       80.0
+  Barcode 3 (forward)                       80.0       84.0
+  Barcode 4 (forward)                       76.0       80.0
+  Barcode 5 (forward)                       79.2       79.2
+  Barcode 6 (forward)                       76.0       73.1
+  Barcode 7 (forward)                       78.6       75.0
+  Barcode 8 (forward)                       74.1       80.0
+  Barcode 9 (forward)                       73.1      100.0
+  Barcode 10 (forward)                      74.1       77.8
+  Barcode 11 (forward)                      79.2       75.0
+  Barcode 12 (forward)                      72.0       74.1
+  Barcode 13 (forward)                      73.1       79.2
+  Barcode 14 (forward)                      75.0       75.0
+  Barcode 15 (forward)                      76.9       76.9
+  Barcode 16 (forward)                      75.0       76.0
+  Barcode 17 (forward)                      72.4       76.9
+  Barcode 18 (forward)                      75.0       79.2
+  Barcode 19 (forward)                      72.0       79.2
+  Barcode 20 (forward)                      80.0       77.8
+  Barcode 21 (forward)                      75.0       75.0
+  Barcode 22 (forward)                      77.8       95.8
+  Barcode 23 (forward)                      74.1       76.9
+  Barcode 24 (forward)                      76.9       84.0
+  Barcode 25 (forward)                      73.1       80.0
+  Barcode 26 (forward)                      80.0       87.5
+  Barcode 27 (forward)                      84.6       84.0
+  Barcode 28 (forward)                      79.3      100.0
+  Barcode 29 (forward)                     100.0      100.0
+  Barcode 30 (forward)                      88.9       92.0
+  Barcode 31 (forward)                      79.2      100.0
+  Barcode 32 (forward)                      81.5       76.9
+  Barcode 33 (forward)                      76.0       76.0
+  Barcode 34 (forward)                      75.0       74.1
+  Barcode 35 (forward)                      77.8       77.8
+  Barcode 36 (forward)                      75.0       76.0
+  Barcode 37 (forward)                      76.9       76.0
+  Barcode 38 (forward)                      73.1       76.0
+  Barcode 39 (forward)                      74.1       75.0
+  Barcode 40 (forward)                      75.0       76.0
+  Barcode 41 (forward)                      74.1       73.1
+  Barcode 42 (forward)                      73.1       76.9
+  Barcode 43 (forward)                      80.0       79.2
+  Barcode 44 (forward)                      72.0       72.0
+  Barcode 45 (forward)                      73.1       78.6
+  Barcode 46 (forward)                      76.9       80.0
+  Barcode 47 (forward)                      76.9       73.3
+  Barcode 48 (forward)                      76.9       76.0
+  Barcode 49 (forward)                      83.3       80.0
+  Barcode 50 (forward)                      76.0       76.9
+  Barcode 51 (forward)                      75.0       74.1
+  Barcode 52 (forward)                      76.9       72.0
+  Barcode 53 (forward)                      74.1       74.1
+  Barcode 54 (forward)                      73.1       79.2
+  Barcode 55 (forward)                      73.1       76.0
+  Barcode 56 (forward)                      75.0       75.0
+  Barcode 57 (forward)                      76.9       79.2
+  Barcode 58 (forward)                      73.1       80.0
+  Barcode 59 (forward)                      76.0       75.0
+  Barcode 60 (forward)                      75.0       76.9
+  Barcode 61 (forward)                      74.1       75.0
+  Barcode 62 (forward)                      76.0       79.2
+  Barcode 63 (forward)                      79.2       77.8
+  Barcode 64 (forward)                      80.0       76.0
+  Barcode 65 (forward)                      76.0       80.0
+  Barcode 66 (forward)                      76.9       79.2
+  Barcode 67 (forward)                      75.9       76.0
+  Barcode 68 (forward)                      74.1       76.0
+  Barcode 69 (forward)                      74.1       76.9
+  Barcode 70 (forward)                      73.1       75.0
+  Barcode 71 (forward)                      79.2       76.9
+  Barcode 72 (forward)                      76.9       80.0
+  Barcode 73 (forward)                      79.2       79.2
+  Barcode 74 (forward)                      75.0       76.0
+  Barcode 75 (forward)                      73.3       76.9
+  Barcode 76 (forward)                      80.0       76.9
+  Barcode 77 (forward)                      73.1       77.8
+  Barcode 78 (forward)                      74.1       73.3
+  Barcode 79 (forward)                      75.0       79.2
+  Barcode 80 (forward)                      73.1       75.0
+  Barcode 81 (forward)                      76.0       81.5
+  Barcode 82 (forward)                      80.0       80.0
+  Barcode 83 (forward)                      80.8       79.2
+  Barcode 84 (forward)                      77.8       75.0
+  Barcode 85 (forward)                      75.0       75.0
+  Barcode 86 (forward)                      87.5       88.0
+  Barcode 87 (forward)                      76.9       83.3
+  Barcode 88 (forward)                      76.0       88.0
+  Barcode 89 (forward)                      87.5       95.8
+  Barcode 90 (forward)                      74.1       88.0
+  Barcode 91 (forward)                      91.7       92.0
+  Barcode 92 (forward)                      91.7       92.0
+  Barcode 93 (forward)                      88.5       83.3
+  Barcode 94 (forward)                      72.0       78.6
+  Barcode 95 (forward)                      72.0       76.0
+  Barcode 96 (forward)                      73.1       76.0
+
+
+Trimming adapters from read ends
+                SQK-NSK007_Y_Top: AATGTACTTCGTTCAGTTACGTATTGCT
+             SQK-NSK007_Y_Bottom: GCAATACGTAACTGAACGAAGT
+           SQK-MAP006_Y_Top_SK63: GGTTGTTTCTGTTGGTGCTGATATTGCT
+        SQK-MAP006_Y_Bottom_SK64: GCAATATCAGCACCAACAGAAA
+     SQK-MAP006_Short_Y_Top_LI32: CGGCGTCTGCTTGGGTGTTTAACCT
+  SQK-MAP006_Short_Y_Bottom_LI33: GGTTAAACACCCAAGCAGACGCCG
+                     PCR_1_start: ACTTGCCTGTCGCTCTATCTTC
+                       PCR_1_end: GAAGATAGAGCGACAGGCAAGT
+                     PCR_2_start: TTTCTGTTGGTGCTGATATTGC
+                       PCR_2_end: GCAATATCAGCACCAACAGAAA
+                     PCR_3_start: TACTTGCCTGTCGCTCTATCTTC
+                       PCR_3_end: GAAGATAGAGCGACAGGCAAGTA
+                1D2_part_2_start: CTTCGTTCAGTTACGTATTGCTGGCGTCTGCTT
+                  1D2_part_2_end: CACCCAAGCAGACGCCAGCAATACGTAACT
+                        BC09_rev: AACCAAGACTCGCTGTGCCTAGTT
+                            BC09: AACTAGGCACAGCGAGTCTTGGTT
+                            BC09: AACTAGGCACAGCGAGTCTTGGTT
+                        BC09_rev: AACCAAGACTCGCTGTGCCTAGTT
+                            BC22: ACCACTGCCATGTATCAAAGTACG
+                        BC22_rev: CGTACTTTGATACATGGCAGTGGT
+                            BC28: TGAAACCTAAGAAGGCACCGTATC
+                        BC28_rev: GATACGGTGCCTTCTTAGGTTTCA
+                            BC29: CTAGACACCTTGGGTTGACAGACC
+                        BC29_rev: GGTCTGTCAACCCAAGGTGTCTAG
+                            BC30: TCAGTGAGGATCTACTTCGACCCA
+                        BC30_rev: TGGGTCGAAGTAGATCCTCACTGA
+                            BC31: TGCGTACAGCAATCAGTTACATTG
+                        BC31_rev: CAATGTAACTGATTGCTGTACGCA
+                            BC89: ACAGCATCAATGTTTGGCTAGTTG
+                        BC89_rev: CAACTAGCCAAACATTGATGCTGT
+                            BC91: GGCTCCATAGGAACTCACGCTACT
+                        BC91_rev: AGTAGCGTGAGTTCCTATGGAGCC
+                            BC92: TTGTGAGTGGAAAGATACAGGACC
+                        BC92_rev: GGTCCTGTATCTTTCCACTCACAA
+                      NB09_start: AATGTACTTCGTTCAGTTACGTATTGCTAAGGTTAAAACCAAGACTCGCTGTGCCTAGTTCAGCACCT
+                        NB09_end: AGGTGCTGAACTAGGCACAGCGAGTCTTGGTTTTAACCTTAGCAATACGTAACTGAACGAAGT
+
+29,657 / 29,657 (100.0%)
+
+29,587 / 29,657 reads had adapters trimmed from their start (3,318,324 bp removed)
+28,237 / 29,657 reads had adapters trimmed from their end (2,123,212 bp removed)
+
+
+Splitting reads containing middle adapters
+29,657 / 29,657 (100.0%)
+
+2,151 / 29,657 reads were split based on middle adapters
+
+
+Saving trimmed reads to file
+pigz not found - using gzip to compress
+
+Saved result to /home/alakh/16S/trimmed/bulk_bottom.trimmed.fastq.gz
+
+
+Loading reads
+data/rhizosphere_bottom.fastq.gz
+27,692 reads loaded
+
+
+Looking for known adapter sets
+10,000 / 10,000 (100.0%)
+                                        Best               
+                                        read       Best    
+                                        start      read end
+  Set                                   %ID        %ID     
+  SQK-NSK007                                96.6       81.8
+  Rapid                                     66.1        0.0
+  RBK004_upstream                           78.9        0.0
+  SQK-MAP006                                96.4      100.0
+  SQK-MAP006 short                         100.0      100.0
+  PCR adapters 1                           100.0      100.0
+  PCR adapters 2                           100.0      100.0
+  PCR adapters 3                           100.0      100.0
+  1D^2 part 1                               74.1       72.4
+  1D^2 part 2                               91.4       87.1
+  cDNA SSP                                  86.8       84.2
+  Barcode 1 (reverse)                       74.1       76.0
+  Barcode 2 (reverse)                       74.1       75.0
+  Barcode 3 (reverse)                       75.0       76.0
+  Barcode 4 (reverse)                       70.4       73.1
+  Barcode 5 (reverse)                       72.4       79.2
+  Barcode 6 (reverse)                       75.0       75.0
+  Barcode 7 (reverse)                       77.8       80.0
+  Barcode 8 (reverse)                       80.0       79.2
+  Barcode 9 (reverse)                       92.0      100.0
+  Barcode 10 (reverse)                      73.1       76.9
+  Barcode 11 (reverse)                      72.0       72.0
+  Barcode 12 (reverse)                      76.0       76.9
+  Barcode 1 (forward)                       73.1       92.0
+  Barcode 2 (forward)                       83.3       76.9
+  Barcode 3 (forward)                       79.2       84.0
+  Barcode 4 (forward)                       76.0       75.9
+  Barcode 5 (forward)                       80.0       79.2
+  Barcode 6 (forward)                       73.1       76.9
+  Barcode 7 (forward)                       76.0       75.0
+  Barcode 8 (forward)                       75.0       80.0
+  Barcode 9 (forward)                       75.0      100.0
+  Barcode 10 (forward)                      74.1       76.0
+  Barcode 11 (forward)                      74.1       75.9
+  Barcode 12 (forward)                      74.1       74.1
+  Barcode 13 (forward)                      74.1       76.0
+  Barcode 14 (forward)                      76.9       76.9
+  Barcode 15 (forward)                      76.9       77.8
+  Barcode 16 (forward)                      76.0       76.0
+  Barcode 17 (forward)                      72.0       76.0
+  Barcode 18 (forward)                      75.0       79.2
+  Barcode 19 (forward)                      75.0       72.0
+  Barcode 20 (forward)                      73.1       76.0
+  Barcode 21 (forward)                      79.2       74.1
+  Barcode 22 (forward)                      76.9       91.7
+  Barcode 23 (forward)                      84.6       87.5
+  Barcode 24 (forward)                      79.2       91.7
+  Barcode 25 (forward)                      76.0       91.7
+  Barcode 26 (forward)                     100.0       87.5
+  Barcode 27 (forward)                      80.8       88.0
+  Barcode 28 (forward)                      76.0       85.7
+  Barcode 29 (forward)                      92.0       88.0
+  Barcode 30 (forward)                     100.0      100.0
+  Barcode 31 (forward)                      88.0      100.0
+  Barcode 32 (forward)                      77.8       76.9
+  Barcode 33 (forward)                      76.0       76.0
+  Barcode 34 (forward)                      74.1       76.0
+  Barcode 35 (forward)                      79.2       76.9
+  Barcode 36 (forward)                      75.0       74.1
+  Barcode 37 (forward)                      80.0       76.0
+  Barcode 38 (forward)                      72.4       76.0
+  Barcode 39 (forward)                      75.0       75.0
+  Barcode 40 (forward)                      75.0       74.1
+  Barcode 41 (forward)                      76.0       75.0
+  Barcode 42 (forward)                      76.9       76.0
+  Barcode 43 (forward)                      80.0       80.0
+  Barcode 44 (forward)                      74.1       73.1
+  Barcode 45 (forward)                      76.0       75.0
+  Barcode 46 (forward)                      80.0       80.0
+  Barcode 47 (forward)                      75.0       73.1
+  Barcode 48 (forward)                      76.0       76.0
+  Barcode 49 (forward)                      76.9       75.0
+  Barcode 50 (forward)                      75.0       75.9
+  Barcode 51 (forward)                      73.1       76.0
+  Barcode 52 (forward)                      76.0       73.1
+  Barcode 53 (forward)                      75.0       77.8
+  Barcode 54 (forward)                      77.8       76.0
+  Barcode 55 (forward)                      72.0       76.9
+  Barcode 56 (forward)                      76.0       76.9
+  Barcode 57 (forward)                      76.9       76.0
+  Barcode 58 (forward)                      75.0       77.8
+  Barcode 59 (forward)                      76.9       75.0
+  Barcode 60 (forward)                      79.2       76.0
+  Barcode 61 (forward)                      76.0       76.0
+  Barcode 62 (forward)                      76.0       77.8
+  Barcode 63 (forward)                      76.0       80.8
+  Barcode 64 (forward)                      74.1       75.0
+  Barcode 65 (forward)                      75.0       76.9
+  Barcode 66 (forward)                      80.0       77.8
+  Barcode 67 (forward)                      76.0       76.0
+  Barcode 68 (forward)                      74.1       74.1
+  Barcode 69 (forward)                      77.8       76.0
+  Barcode 70 (forward)                      72.0       75.0
+  Barcode 71 (forward)                      76.0       76.0
+  Barcode 72 (forward)                      76.9       77.8
+  Barcode 73 (forward)                      76.0       73.1
+  Barcode 74 (forward)                      73.1       76.9
+  Barcode 75 (forward)                      75.9       76.0
+  Barcode 76 (forward)                      76.0       76.9
+  Barcode 77 (forward)                      73.1       76.9
+  Barcode 78 (forward)                      74.1       75.0
+  Barcode 79 (forward)                      75.0       76.0
+  Barcode 80 (forward)                      75.0       76.0
+  Barcode 81 (forward)                      80.0       80.0
+  Barcode 82 (forward)                      76.9       79.2
+  Barcode 83 (forward)                      76.9       79.2
+  Barcode 84 (forward)                      73.1       74.1
+  Barcode 85 (forward)                      76.0       73.1
+  Barcode 86 (forward)                      92.0      100.0
+  Barcode 87 (forward)                      87.5       85.2
+  Barcode 88 (forward)                      76.9       74.1
+  Barcode 89 (forward)                      80.0      100.0
+  Barcode 90 (forward)                      84.6       87.5
+  Barcode 91 (forward)                      85.2       91.7
+  Barcode 92 (forward)                      92.3      100.0
+  Barcode 93 (forward)                      79.2       87.5
+  Barcode 94 (forward)                      76.9       76.9
+  Barcode 95 (forward)                      76.0       76.0
+  Barcode 96 (forward)                      74.1       75.0
+
+
+Trimming adapters from read ends
+                SQK-NSK007_Y_Top: AATGTACTTCGTTCAGTTACGTATTGCT
+             SQK-NSK007_Y_Bottom: GCAATACGTAACTGAACGAAGT
+           SQK-MAP006_Y_Top_SK63: GGTTGTTTCTGTTGGTGCTGATATTGCT
+        SQK-MAP006_Y_Bottom_SK64: GCAATATCAGCACCAACAGAAA
+     SQK-MAP006_Short_Y_Top_LI32: CGGCGTCTGCTTGGGTGTTTAACCT
+  SQK-MAP006_Short_Y_Bottom_LI33: GGTTAAACACCCAAGCAGACGCCG
+                     PCR_1_start: ACTTGCCTGTCGCTCTATCTTC
+                       PCR_1_end: GAAGATAGAGCGACAGGCAAGT
+                     PCR_2_start: TTTCTGTTGGTGCTGATATTGC
+                       PCR_2_end: GCAATATCAGCACCAACAGAAA
+                     PCR_3_start: TACTTGCCTGTCGCTCTATCTTC
+                       PCR_3_end: GAAGATAGAGCGACAGGCAAGTA
+                1D2_part_2_start: CTTCGTTCAGTTACGTATTGCTGGCGTCTGCTT
+                  1D2_part_2_end: CACCCAAGCAGACGCCAGCAATACGTAACT
+                        BC09_rev: AACCAAGACTCGCTGTGCCTAGTT
+                            BC09: AACTAGGCACAGCGAGTCTTGGTT
+                            BC01: AAGAAAGTTGTCGGTGTCTTTGTG
+                        BC01_rev: CACAAAGACACCGACAACTTTCTT
+                            BC09: AACTAGGCACAGCGAGTCTTGGTT
+                        BC09_rev: AACCAAGACTCGCTGTGCCTAGTT
+                            BC22: ACCACTGCCATGTATCAAAGTACG
+                        BC22_rev: CGTACTTTGATACATGGCAGTGGT
+                            BC24: GCATAGTTCTGCATGATGGGTTAG
+                        BC24_rev: CTAACCCATCATGCAGAACTATGC
+                            BC25: GTAAGTTGGGTATGCAACGCAATG
+                        BC25_rev: CATTGCGTTGCATACCCAACTTAC
+                            BC26: CATACAGCGACTACGCATTCTCAT
+                        BC26_rev: ATGAGAATGCGTAGTCGCTGTATG
+                            BC29: CTAGACACCTTGGGTTGACAGACC
+                        BC29_rev: GGTCTGTCAACCCAAGGTGTCTAG
+                            BC30: TCAGTGAGGATCTACTTCGACCCA
+                        BC30_rev: TGGGTCGAAGTAGATCCTCACTGA
+                            BC31: TGCGTACAGCAATCAGTTACATTG
+                        BC31_rev: CAATGTAACTGATTGCTGTACGCA
+                            BC86: AGGTGATCCCAACAAGCGTAAGTA
+                        BC86_rev: TACTTACGCTTGTTGGGATCACCT
+                            BC89: ACAGCATCAATGTTTGGCTAGTTG
+                        BC89_rev: CAACTAGCCAAACATTGATGCTGT
+                            BC91: GGCTCCATAGGAACTCACGCTACT
+                        BC91_rev: AGTAGCGTGAGTTCCTATGGAGCC
+                            BC92: TTGTGAGTGGAAAGATACAGGACC
+                        BC92_rev: GGTCCTGTATCTTTCCACTCACAA
+                      NB09_start: AATGTACTTCGTTCAGTTACGTATTGCTAAGGTTAAAACCAAGACTCGCTGTGCCTAGTTCAGCACCT
+                        NB09_end: AGGTGCTGAACTAGGCACAGCGAGTCTTGGTTTTAACCTTAGCAATACGTAACTGAACGAAGT
+
+27,692 / 27,692 (100.0%)
+
+27,602 / 27,692 reads had adapters trimmed from their start (3,108,172 bp removed)
+26,518 / 27,692 reads had adapters trimmed from their end (1,959,583 bp removed)
+
+
+Splitting reads containing middle adapters
+27,692 / 27,692 (100.0%)
+
+1,369 / 27,692 reads were split based on middle adapters
+
+
+Saving trimmed reads to file
+pigz not found - using gzip to compress
+
+Saved result to /home/alakh/16S/trimmed/rhizosphere_bottom.trimmed.fastq.gz
+
+
+Loading reads
+data/bulk_top.fastq.gz
+29,766 reads loaded
+
+
+Looking for known adapter sets
+10,000 / 10,000 (100.0%)
+                                        Best               
+                                        read       Best    
+                                        start      read end
+  Set                                   %ID        %ID     
+  SQK-NSK007                                96.6       81.8
+  Rapid                                     67.9        0.0
+  RBK004_upstream                           80.0        0.0
+  SQK-MAP006                                90.0      100.0
+  SQK-MAP006 short                         100.0      100.0
+  PCR adapters 1                           100.0      100.0
+  PCR adapters 2                           100.0      100.0
+  PCR adapters 3                           100.0      100.0
+  1D^2 part 1                               70.4       72.4
+  1D^2 part 2                               94.1       87.1
+  cDNA SSP                                  84.6       84.2
+  Barcode 1 (reverse)                       76.0       75.0
+  Barcode 2 (reverse)                       76.9       75.0
+  Barcode 3 (reverse)                       79.2       76.9
+  Barcode 4 (reverse)                       73.1       75.0
+  Barcode 5 (reverse)                       72.4       73.1
+  Barcode 6 (reverse)                       73.1       75.0
+  Barcode 7 (reverse)                       75.0       76.0
+  Barcode 8 (reverse)                       75.0       77.8
+  Barcode 9 (reverse)                       92.3       96.0
+  Barcode 10 (reverse)                      74.1       76.0
+  Barcode 11 (reverse)                      72.0       75.0
+  Barcode 12 (reverse)                      75.0       76.0
+  Barcode 1 (forward)                       71.4      100.0
+  Barcode 2 (forward)                       80.0       76.9
+  Barcode 3 (forward)                       79.2       83.3
+  Barcode 4 (forward)                       76.9       76.0
+  Barcode 5 (forward)                       80.0       80.0
+  Barcode 6 (forward)                       73.1       74.1
+  Barcode 7 (forward)                       76.9       75.0
+  Barcode 8 (forward)                       73.3       77.8
+  Barcode 9 (forward)                       75.0      100.0
+  Barcode 10 (forward)                      75.0       75.0
+  Barcode 11 (forward)                      77.8       76.0
+  Barcode 12 (forward)                      73.1       76.9
+  Barcode 13 (forward)                      72.0       76.9
+  Barcode 14 (forward)                      75.0       79.2
+  Barcode 15 (forward)                      76.9       76.9
+  Barcode 16 (forward)                      75.0       75.0
+  Barcode 17 (forward)                      73.1       73.1
+  Barcode 18 (forward)                      79.2       80.0
+  Barcode 19 (forward)                      75.0       74.1
+  Barcode 20 (forward)                      73.1       76.0
+  Barcode 21 (forward)                      76.0       76.0
+  Barcode 22 (forward)                      81.5       92.0
+  Barcode 23 (forward)                      76.0       83.3
+  Barcode 24 (forward)                      79.2       84.0
+  Barcode 25 (forward)                      79.3       79.2
+  Barcode 26 (forward)                      72.0       92.0
+  Barcode 27 (forward)                      76.0       76.0
+  Barcode 28 (forward)                      91.7       85.7
+  Barcode 29 (forward)                     100.0      100.0
+  Barcode 30 (forward)                      74.1       91.7
+  Barcode 31 (forward)                      88.5       91.7
+  Barcode 32 (forward)                      77.8       76.9
+  Barcode 33 (forward)                      75.0       76.0
+  Barcode 34 (forward)                      75.0       77.8
+  Barcode 35 (forward)                      76.9       77.8
+  Barcode 36 (forward)                      75.0       73.1
+  Barcode 37 (forward)                      79.2       76.0
+  Barcode 38 (forward)                      76.0       76.0
+  Barcode 39 (forward)                      73.1       76.0
+  Barcode 40 (forward)                      75.0       74.1
+  Barcode 41 (forward)                      76.0       76.0
+  Barcode 42 (forward)                      75.0       76.9
+  Barcode 43 (forward)                      80.0       76.9
+  Barcode 44 (forward)                      72.0       75.0
+  Barcode 45 (forward)                      73.1       75.0
+  Barcode 46 (forward)                      76.9       76.0
+  Barcode 47 (forward)                      74.1       78.6
+  Barcode 48 (forward)                      76.0       76.0
+  Barcode 49 (forward)                      83.3       77.8
+  Barcode 50 (forward)                      75.0       76.0
+  Barcode 51 (forward)                      75.0       88.5
+  Barcode 52 (forward)                      76.0       76.0
+  Barcode 53 (forward)                      73.1       76.9
+  Barcode 54 (forward)                      75.0       79.2
+  Barcode 55 (forward)                      80.0       76.9
+  Barcode 56 (forward)                      76.0       76.0
+  Barcode 57 (forward)                      73.1       76.0
+  Barcode 58 (forward)                      76.0       80.0
+  Barcode 59 (forward)                      73.1       75.0
+  Barcode 60 (forward)                      76.9       77.8
+  Barcode 61 (forward)                      74.1       76.0
+  Barcode 62 (forward)                      74.1       76.0
+  Barcode 63 (forward)                      80.0       80.0
+  Barcode 64 (forward)                      79.2       76.0
+  Barcode 65 (forward)                      73.1       79.2
+  Barcode 66 (forward)                      79.2       79.2
+  Barcode 67 (forward)                      76.9       76.0
+  Barcode 68 (forward)                      75.0       73.1
+  Barcode 69 (forward)                      74.1       75.0
+  Barcode 70 (forward)                      72.0       74.1
+  Barcode 71 (forward)                      79.2       76.9
+  Barcode 72 (forward)                      76.0       77.8
+  Barcode 73 (forward)                      79.2       75.0
+  Barcode 74 (forward)                      74.1       80.8
+  Barcode 75 (forward)                      75.0       75.9
+  Barcode 76 (forward)                      77.8       80.8
+  Barcode 77 (forward)                      76.0       76.0
+  Barcode 78 (forward)                      76.0       75.0
+  Barcode 79 (forward)                      75.0       75.0
+  Barcode 80 (forward)                      73.1       73.1
+  Barcode 81 (forward)                      77.8       77.8
+  Barcode 82 (forward)                      77.8       75.0
+  Barcode 83 (forward)                      80.0       80.8
+  Barcode 84 (forward)                      79.2       76.9
+  Barcode 85 (forward)                      75.0       77.8
+  Barcode 86 (forward)                      82.1       95.8
+  Barcode 87 (forward)                      77.8       95.8
+  Barcode 88 (forward)                      74.1       77.8
+  Barcode 89 (forward)                      95.8      100.0
+  Barcode 90 (forward)                      88.9       92.0
+  Barcode 91 (forward)                      83.3      100.0
+  Barcode 92 (forward)                      95.8      100.0
+  Barcode 93 (forward)                      87.5       92.3
+  Barcode 94 (forward)                      75.0       76.9
+  Barcode 95 (forward)                      73.1       76.0
+  Barcode 96 (forward)                      75.0       76.9
+
+
+Trimming adapters from read ends
+                SQK-NSK007_Y_Top: AATGTACTTCGTTCAGTTACGTATTGCT
+             SQK-NSK007_Y_Bottom: GCAATACGTAACTGAACGAAGT
+           SQK-MAP006_Y_Top_SK63: GGTTGTTTCTGTTGGTGCTGATATTGCT
+        SQK-MAP006_Y_Bottom_SK64: GCAATATCAGCACCAACAGAAA
+     SQK-MAP006_Short_Y_Top_LI32: CGGCGTCTGCTTGGGTGTTTAACCT
+  SQK-MAP006_Short_Y_Bottom_LI33: GGTTAAACACCCAAGCAGACGCCG
+                     PCR_1_start: ACTTGCCTGTCGCTCTATCTTC
+                       PCR_1_end: GAAGATAGAGCGACAGGCAAGT
+                     PCR_2_start: TTTCTGTTGGTGCTGATATTGC
+                       PCR_2_end: GCAATATCAGCACCAACAGAAA
+                     PCR_3_start: TACTTGCCTGTCGCTCTATCTTC
+                       PCR_3_end: GAAGATAGAGCGACAGGCAAGTA
+                1D2_part_2_start: CTTCGTTCAGTTACGTATTGCTGGCGTCTGCTT
+                  1D2_part_2_end: CACCCAAGCAGACGCCAGCAATACGTAACT
+                        BC09_rev: AACCAAGACTCGCTGTGCCTAGTT
+                            BC09: AACTAGGCACAGCGAGTCTTGGTT
+                            BC01: AAGAAAGTTGTCGGTGTCTTTGTG
+                        BC01_rev: CACAAAGACACCGACAACTTTCTT
+                            BC09: AACTAGGCACAGCGAGTCTTGGTT
+                        BC09_rev: AACCAAGACTCGCTGTGCCTAGTT
+                            BC22: ACCACTGCCATGTATCAAAGTACG
+                        BC22_rev: CGTACTTTGATACATGGCAGTGGT
+                            BC26: CATACAGCGACTACGCATTCTCAT
+                        BC26_rev: ATGAGAATGCGTAGTCGCTGTATG
+                            BC28: TGAAACCTAAGAAGGCACCGTATC
+                        BC28_rev: GATACGGTGCCTTCTTAGGTTTCA
+                            BC29: CTAGACACCTTGGGTTGACAGACC
+                        BC29_rev: GGTCTGTCAACCCAAGGTGTCTAG
+                            BC30: TCAGTGAGGATCTACTTCGACCCA
+                        BC30_rev: TGGGTCGAAGTAGATCCTCACTGA
+                            BC31: TGCGTACAGCAATCAGTTACATTG
+                        BC31_rev: CAATGTAACTGATTGCTGTACGCA
+                            BC86: AGGTGATCCCAACAAGCGTAAGTA
+                        BC86_rev: TACTTACGCTTGTTGGGATCACCT
+                            BC87: TACATGCTCCTGTTGTTAGGGAGG
+                        BC87_rev: CCTCCCTAACAACAGGAGCATGTA
+                            BC89: ACAGCATCAATGTTTGGCTAGTTG
+                        BC89_rev: CAACTAGCCAAACATTGATGCTGT
+                            BC90: GATGTAGAGGGTACGGTTTGAGGC
+                        BC90_rev: GCCTCAAACCGTACCCTCTACATC
+                            BC91: GGCTCCATAGGAACTCACGCTACT
+                        BC91_rev: AGTAGCGTGAGTTCCTATGGAGCC
+                            BC92: TTGTGAGTGGAAAGATACAGGACC
+                        BC92_rev: GGTCCTGTATCTTTCCACTCACAA
+                            BC93: AGTTTCCATCACTTCAGACTTGGG
+                        BC93_rev: CCCAAGTCTGAAGTGATGGAAACT
+                      NB09_start: AATGTACTTCGTTCAGTTACGTATTGCTAAGGTTAAAACCAAGACTCGCTGTGCCTAGTTCAGCACCT
+                        NB09_end: AGGTGCTGAACTAGGCACAGCGAGTCTTGGTTTTAACCTTAGCAATACGTAACTGAACGAAGT
+
+29,766 / 29,766 (100.0%)
+
+29,723 / 29,766 reads had adapters trimmed from their start (3,334,707 bp removed)
+28,606 / 29,766 reads had adapters trimmed from their end (2,099,611 bp removed)
+
+
+Splitting reads containing middle adapters
+29,766 / 29,766 (100.0%)
+
+2,309 / 29,766 reads were split based on middle adapters
+
+
+Saving trimmed reads to file
+pigz not found - using gzip to compress
+
+Saved result to /home/alakh/16S/trimmed/bulk_top.trimmed.fastq.gz
+
+
+Loading reads
+data/rhizosphere_top.fastq.gz
+27,692 reads loaded
+
+
+Looking for known adapter sets
+10,000 / 10,000 (100.0%)
+                                        Best               
+                                        read       Best    
+                                        start      read end
+  Set                                   %ID        %ID     
+  SQK-NSK007                                96.6       80.0
+  Rapid                                     68.0        0.0
+  RBK004_upstream                           81.6        0.0
+  SQK-MAP006                                96.4      100.0
+  SQK-MAP006 short                         100.0      100.0
+  PCR adapters 1                           100.0      100.0
+  PCR adapters 2                           100.0      100.0
+  PCR adapters 3                           100.0      100.0
+  1D^2 part 1                               75.9       72.4
+  1D^2 part 2                               93.9       87.1
+  cDNA SSP                                  84.6       82.1
+  Barcode 1 (reverse)                       76.9       75.0
+  Barcode 2 (reverse)                       73.1       74.1
+  Barcode 3 (reverse)                       76.9       74.1
+  Barcode 4 (reverse)                       72.0       74.1
+  Barcode 5 (reverse)                       72.0       72.0
+  Barcode 6 (reverse)                       76.0       75.0
+  Barcode 7 (reverse)                       77.8       76.0
+  Barcode 8 (reverse)                       76.9       75.0
+  Barcode 9 (reverse)                       92.0       96.0
+  Barcode 10 (reverse)                      73.1       80.0
+  Barcode 11 (reverse)                      72.0       76.9
+  Barcode 12 (reverse)                      74.1       79.2
+  Barcode 1 (forward)                       75.0       77.8
+  Barcode 2 (forward)                       84.0       76.0
+  Barcode 3 (forward)                       80.0       83.3
+  Barcode 4 (forward)                       76.9       76.9
+  Barcode 5 (forward)                       80.0       80.0
+  Barcode 6 (forward)                       70.8       75.0
+  Barcode 7 (forward)                       79.2       75.0
+  Barcode 8 (forward)                       76.0       75.0
+  Barcode 9 (forward)                       74.1       95.8
+  Barcode 10 (forward)                      75.0       74.1
+  Barcode 11 (forward)                      76.9       74.1
+  Barcode 12 (forward)                      72.0       75.0
+  Barcode 13 (forward)                      73.1       76.0
+  Barcode 14 (forward)                      76.9       76.9
+  Barcode 15 (forward)                      76.9       78.6
+  Barcode 16 (forward)                      76.0       76.9
+  Barcode 17 (forward)                      73.1       75.0
+  Barcode 18 (forward)                      75.0       79.2
+  Barcode 19 (forward)                      75.0       76.0
+  Barcode 20 (forward)                      76.0       80.0
+  Barcode 21 (forward)                      73.1       75.0
+  Barcode 22 (forward)                      76.9       84.0
+  Barcode 23 (forward)                      80.0       88.5
+  Barcode 24 (forward)                      76.0       91.7
+  Barcode 25 (forward)                      75.0       83.3
+  Barcode 26 (forward)                      73.1       91.7
+  Barcode 27 (forward)                      75.0       82.1
+  Barcode 28 (forward)                      75.0       76.0
+  Barcode 29 (forward)                      88.9       96.0
+  Barcode 30 (forward)                     100.0      100.0
+  Barcode 31 (forward)                      92.3      100.0
+  Barcode 32 (forward)                      77.8       80.0
+  Barcode 33 (forward)                      76.0       76.0
+  Barcode 34 (forward)                      76.0       76.0
+  Barcode 35 (forward)                      80.8       76.9
+  Barcode 36 (forward)                      73.1       76.0
+  Barcode 37 (forward)                      75.0       77.8
+  Barcode 38 (forward)                      76.0       76.0
+  Barcode 39 (forward)                      73.1       75.0
+  Barcode 40 (forward)                      76.0       75.0
+  Barcode 41 (forward)                      76.9       74.1
+  Barcode 42 (forward)                      76.9       76.0
+  Barcode 43 (forward)                      80.0       79.2
+  Barcode 44 (forward)                      76.0       75.0
+  Barcode 45 (forward)                      74.1       75.0
+  Barcode 46 (forward)                      76.9       76.7
+  Barcode 47 (forward)                      73.1       74.1
+  Barcode 48 (forward)                      79.2       76.9
+  Barcode 49 (forward)                      76.0       75.0
+  Barcode 50 (forward)                      75.0       80.0
+  Barcode 51 (forward)                      73.1       76.0
+  Barcode 52 (forward)                      75.0       76.9
+  Barcode 53 (forward)                      74.1       75.0
+  Barcode 54 (forward)                      75.0       79.2
+  Barcode 55 (forward)                      73.1       79.2
+  Barcode 56 (forward)                      76.0       79.2
+  Barcode 57 (forward)                      80.0       76.0
+  Barcode 58 (forward)                      77.8       80.0
+  Barcode 59 (forward)                      73.1       74.1
+  Barcode 60 (forward)                      75.0       76.0
+  Barcode 61 (forward)                      74.1       75.0
+  Barcode 62 (forward)                      74.1       75.0
+  Barcode 63 (forward)                      79.2       78.6
+  Barcode 64 (forward)                      76.0       76.9
+  Barcode 65 (forward)                      73.3       76.9
+  Barcode 66 (forward)                      80.0       80.0
+  Barcode 67 (forward)                      73.1       77.8
+  Barcode 68 (forward)                      76.0       76.9
+  Barcode 69 (forward)                      75.0       75.0
+  Barcode 70 (forward)                      73.1       73.1
+  Barcode 71 (forward)                      76.9       76.9
+  Barcode 72 (forward)                      76.0       80.8
+  Barcode 73 (forward)                      74.1       72.0
+  Barcode 74 (forward)                      76.0       74.1
+  Barcode 75 (forward)                      75.0       77.8
+  Barcode 76 (forward)                      76.0       79.2
+  Barcode 77 (forward)                      76.0       79.2
+  Barcode 78 (forward)                      75.0       74.1
+  Barcode 79 (forward)                      76.0       76.9
+  Barcode 80 (forward)                      73.1       75.0
+  Barcode 81 (forward)                      76.0       77.8
+  Barcode 82 (forward)                      80.0       79.2
+  Barcode 83 (forward)                      80.0       79.2
+  Barcode 84 (forward)                      76.0       75.0
+  Barcode 85 (forward)                      75.0       76.0
+  Barcode 86 (forward)                     100.0       95.8
+  Barcode 87 (forward)                     100.0       83.3
+  Barcode 88 (forward)                      79.2       79.2
+  Barcode 89 (forward)                      78.6       91.7
+  Barcode 90 (forward)                      80.8       88.0
+  Barcode 91 (forward)                      85.2       95.8
+  Barcode 92 (forward)                      95.8       95.8
+  Barcode 93 (forward)                      84.0       95.8
+  Barcode 94 (forward)                      74.1       76.9
+  Barcode 95 (forward)                      72.4       76.0
+  Barcode 96 (forward)                      75.0       73.1
+
+
+Trimming adapters from read ends
+                SQK-NSK007_Y_Top: AATGTACTTCGTTCAGTTACGTATTGCT
+             SQK-NSK007_Y_Bottom: GCAATACGTAACTGAACGAAGT
+           SQK-MAP006_Y_Top_SK63: GGTTGTTTCTGTTGGTGCTGATATTGCT
+        SQK-MAP006_Y_Bottom_SK64: GCAATATCAGCACCAACAGAAA
+     SQK-MAP006_Short_Y_Top_LI32: CGGCGTCTGCTTGGGTGTTTAACCT
+  SQK-MAP006_Short_Y_Bottom_LI33: GGTTAAACACCCAAGCAGACGCCG
+                     PCR_1_start: ACTTGCCTGTCGCTCTATCTTC
+                       PCR_1_end: GAAGATAGAGCGACAGGCAAGT
+                     PCR_2_start: TTTCTGTTGGTGCTGATATTGC
+                       PCR_2_end: GCAATATCAGCACCAACAGAAA
+                     PCR_3_start: TACTTGCCTGTCGCTCTATCTTC
+                       PCR_3_end: GAAGATAGAGCGACAGGCAAGTA
+                1D2_part_2_start: CTTCGTTCAGTTACGTATTGCTGGCGTCTGCTT
+                  1D2_part_2_end: CACCCAAGCAGACGCCAGCAATACGTAACT
+                        BC09_rev: AACCAAGACTCGCTGTGCCTAGTT
+                            BC09: AACTAGGCACAGCGAGTCTTGGTT
+                            BC09: AACTAGGCACAGCGAGTCTTGGTT
+                        BC09_rev: AACCAAGACTCGCTGTGCCTAGTT
+                            BC24: GCATAGTTCTGCATGATGGGTTAG
+                        BC24_rev: CTAACCCATCATGCAGAACTATGC
+                            BC26: CATACAGCGACTACGCATTCTCAT
+                        BC26_rev: ATGAGAATGCGTAGTCGCTGTATG
+                            BC29: CTAGACACCTTGGGTTGACAGACC
+                        BC29_rev: GGTCTGTCAACCCAAGGTGTCTAG
+                            BC30: TCAGTGAGGATCTACTTCGACCCA
+                        BC30_rev: TGGGTCGAAGTAGATCCTCACTGA
+                            BC31: TGCGTACAGCAATCAGTTACATTG
+                        BC31_rev: CAATGTAACTGATTGCTGTACGCA
+                            BC86: AGGTGATCCCAACAAGCGTAAGTA
+                        BC86_rev: TACTTACGCTTGTTGGGATCACCT
+                            BC87: TACATGCTCCTGTTGTTAGGGAGG
+                        BC87_rev: CCTCCCTAACAACAGGAGCATGTA
+                            BC89: ACAGCATCAATGTTTGGCTAGTTG
+                        BC89_rev: CAACTAGCCAAACATTGATGCTGT
+                            BC91: GGCTCCATAGGAACTCACGCTACT
+                        BC91_rev: AGTAGCGTGAGTTCCTATGGAGCC
+                            BC92: TTGTGAGTGGAAAGATACAGGACC
+                        BC92_rev: GGTCCTGTATCTTTCCACTCACAA
+                            BC93: AGTTTCCATCACTTCAGACTTGGG
+                        BC93_rev: CCCAAGTCTGAAGTGATGGAAACT
+                      NB09_start: AATGTACTTCGTTCAGTTACGTATTGCTAAGGTTAAAACCAAGACTCGCTGTGCCTAGTTCAGCACCT
+                        NB09_end: AGGTGCTGAACTAGGCACAGCGAGTCTTGGTTTTAACCTTAGCAATACGTAACTGAACGAAGT
+
+27,692 / 27,692 (100.0%)
+
+27,600 / 27,692 reads had adapters trimmed from their start (3,113,106 bp removed)
+26,522 / 27,692 reads had adapters trimmed from their end (1,980,046 bp removed)
+
+
+Splitting reads containing middle adapters
+27,692 / 27,692 (100.0%)
+
+1,314 / 27,692 reads were split based on middle adapters
+
+
+Saving trimmed reads to file
+pigz not found - using gzip to compress
+
+Saved result to /home/alakh/16S/trimmed/rhizosphere_top.trimmed.fastq.gz
+
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+data  download_data.sh  kronadb.txt  multiqc_data  multiqc_report.html  trimmed  trim_reads.sh
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls trimmed/
+bulk_bottom.trimmed.fastq.gz  bulk_top.trimmed.fastq.gz  rhizosphere_bottom.trimmed.fastq.gz  rhizosphere_top.trimmed.fastq.gz
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ nano filter_reads.sh
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ chmod +x filter_reads.sh 
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+data  download_data.sh  filter_reads.sh  kronadb.txt  multiqc_data  multiqc_report.html  trimmed  trim_reads.sh
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ./filter_reads.sh 
+Read1 before filtering:
+total reads: 28319
+total bases: 35241261
+Q20 bases: 4605226(13.0677%)
+Q30 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 20669
+total bases: 30529049
+Q20 bases: 4209590(13.7888%)
+Q30 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 20669
+reads failed due to low quality: 2986
+reads failed due to too many N: 0
+reads failed due to too short: 4664
+
+Duplication rate (may be overestimated since this is SE data): 0%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -q 9 -l 1000 -b 2000 -G -A -i trimmed/bulk_bottom.trimmed.fastq.gz -o filtered_reads/bulk_bottom.filt.fastq.gz 
+fastp v0.23.2, time used: 3 seconds
+Read1 before filtering:
+total reads: 27125
+total bases: 35385787
+Q20 bases: 4853768(13.7167%)
+Q30 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 21042
+total bases: 31074783
+Q20 bases: 4473296(14.3953%)
+Q30 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 21042
+reads failed due to low quality: 2573
+reads failed due to too many N: 0
+reads failed due to too short: 3510
+
+Duplication rate (may be overestimated since this is SE data): 0%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -q 9 -l 1000 -b 2000 -G -A -i trimmed/rhizosphere_bottom.trimmed.fastq.gz -o filtered_reads/rhizosphere_bottom.filt.fastq.gz 
+fastp v0.23.2, time used: 3 seconds
+Read1 before filtering:
+total reads: 28310
+total bases: 35182111
+Q20 bases: 4879215(13.8685%)
+Q30 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 21110
+total bases: 31129986
+Q20 bases: 4511036(14.491%)
+Q30 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 21110
+reads failed due to low quality: 2425
+reads failed due to too many N: 0
+reads failed due to too short: 4775
+
+Duplication rate (may be overestimated since this is SE data): 0%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -q 9 -l 1000 -b 2000 -G -A -i trimmed/bulk_top.trimmed.fastq.gz -o filtered_reads/bulk_top.filt.fastq.gz 
+fastp v0.23.2, time used: 3 seconds
+Read1 before filtering:
+total reads: 27153
+total bases: 35294101
+Q20 bases: 4613737(13.0723%)
+Q30 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 20556
+total bases: 30393909
+Q20 bases: 4209170(13.8487%)
+Q30 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 20556
+reads failed due to low quality: 3047
+reads failed due to too many N: 0
+reads failed due to too short: 3550
+
+Duplication rate (may be overestimated since this is SE data): 0.00368283%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp -q 9 -l 1000 -b 2000 -G -A -i trimmed/rhizosphere_top.trimmed.fastq.gz -o filtered_reads/rhizosphere_top.filt.fastq.gz 
+fastp v0.23.2, time used: 4 seconds
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+data              fastp.html  filtered_reads   kronadb.txt   multiqc_report.html  trim_reads.sh
+download_data.sh  fastp.json  filter_reads.sh  multiqc_data  trimmed
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls filter_reads/
+ls: cannot access 'filter_reads/': No such file or directory
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls filtered_reads/
+bulk_bottom.filt.fastq.gz  bulk_top.filt.fastq.gz  rhizosphere_bottom.filt.fastq.gz  rhizosphere_top.filt.fastq.gz
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ nano download_silva_16s_db.sh
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ls
+data              download_silva_16s_db.sh  fastp.json      filter_reads.sh  multiqc_data         trimmed
+download_data.sh  fastp.html                filtered_reads  kronadb.txt      multiqc_report.html  trim_reads.sh
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ chmod +x download_silva_16s_db.sh 
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ./download_silva_16s_db.sh 
+./download_silva_16s_db.sh: line 7: 16S_silva_installation.sh: command not found
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ ./download_silva_16s_db.sh
+mkdir: cannot create directory ‘16S_DB’: File exists
+./download_silva_16s_db.sh: line 7: 16S_silva_installation.sh: command not found
+(16S) alakh@alakh-HP-Laptop-15-bs0xx:~/16S$ 
+
