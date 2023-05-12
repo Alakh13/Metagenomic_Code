@@ -1,0 +1,405 @@
+(base) alakh@alakh-HP-Laptop-15-bs0xx:~$ conda config --add channels bioconda
+Warning: 'bioconda' already in 'channels' list, moving to the top
+(base) alakh@alakh-HP-Laptop-15-bs0xx:~$ conda create -n metagenomics kraken2 trimmomatic 
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.1.0
+  latest version: 23.3.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=23.3.1
+
+
+
+## Package Plan ##
+
+  environment location: /home/alakh/miniconda3/envs/metagenomics
+
+  added / updated specs:
+    - kraken2
+    - trimmomatic
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _libgcc_mutex-0.1          |      conda_forge           3 KB  conda-forge
+    _openmp_mutex-4.5          |            2_gnu          23 KB  conda-forge
+    alsa-lib-1.2.8             |       h166bdaf_0         578 KB  conda-forge
+    blast-2.5.0                |       hc0b0e79_3       137.8 MB  bioconda
+    boost-1.82.0               |  py311hcb41070_0         312 KB  conda-forge
+    boost-cpp-1.82.0           |       he19a28c_1        16.0 MB  conda-forge
+    bzip2-1.0.8                |       h7f98852_4         484 KB  conda-forge
+    ca-certificates-2022.12.7  |       ha878542_0         143 KB  conda-forge
+    cairo-1.16.0               |    h35add3b_1015         1.1 MB  conda-forge
+    expat-2.5.0                |       hcb278e6_1         134 KB  conda-forge
+    font-ttf-dejavu-sans-mono-2.37|       hab24e00_0         388 KB  conda-forge
+    font-ttf-inconsolata-3.000 |       h77eed37_0          94 KB  conda-forge
+    font-ttf-source-code-pro-2.038|       h77eed37_0         684 KB  conda-forge
+    font-ttf-ubuntu-0.83       |       hab24e00_0         1.9 MB  conda-forge
+    fontconfig-2.14.2          |       h14ed4e7_0         266 KB  conda-forge
+    fonts-conda-ecosystem-1    |                0           4 KB  conda-forge
+    fonts-conda-forge-1        |                0           4 KB  conda-forge
+    freetype-2.12.1            |       hca18f0e_1         611 KB  conda-forge
+    gettext-0.21.1             |       h27087fc_0         4.1 MB  conda-forge
+    giflib-5.2.1               |       h0b41bf4_3          76 KB  conda-forge
+    graphite2-1.3.13           |    h58526e2_1001         102 KB  conda-forge
+    harfbuzz-6.0.0             |       h3ff4399_1         1.2 MB  conda-forge
+    icu-72.1                   |       hcb278e6_0        11.4 MB  conda-forge
+    keyutils-1.6.1             |       h166bdaf_0         115 KB  conda-forge
+    kraken2-2.1.2              | pl5321h9f5acd7_3         212 KB  bioconda
+    krb5-1.20.1                |       h81ceb04_0         1.3 MB  conda-forge
+    lcms2-2.15                 |       haa2dc70_1         236 KB  conda-forge
+    ld_impl_linux-64-2.40      |       h41732ed_0         688 KB  conda-forge
+    lerc-4.0.0                 |       h27087fc_0         275 KB  conda-forge
+    libblas-3.9.0              |16_linux64_openblas          13 KB  conda-forge
+    libcblas-3.9.0             |16_linux64_openblas          13 KB  conda-forge
+    libcups-2.3.3              |       h36d4200_3         4.3 MB  conda-forge
+    libdeflate-1.18            |       h0b41bf4_0          64 KB  conda-forge
+    libedit-3.1.20191231       |       he28a2e2_2         121 KB  conda-forge
+    libexpat-2.5.0             |       hcb278e6_1          76 KB  conda-forge
+    libffi-3.4.2               |       h7f98852_5          57 KB  conda-forge
+    libgcc-ng-12.2.0           |      h65d4601_19         931 KB  conda-forge
+    libgfortran-ng-12.2.0      |      h69a702a_19          22 KB  conda-forge
+    libgfortran5-12.2.0        |      h337968e_19         1.8 MB  conda-forge
+    libglib-2.76.2             |       hebfc3b9_0         2.6 MB  conda-forge
+    libgomp-12.2.0             |      h65d4601_19         455 KB  conda-forge
+    libiconv-1.17              |       h166bdaf_0         1.4 MB  conda-forge
+    libidn2-2.3.4              |       h166bdaf_0         157 KB  conda-forge
+    libjpeg-turbo-2.1.5.1      |       h0b41bf4_0         479 KB  conda-forge
+    liblapack-3.9.0            |16_linux64_openblas          13 KB  conda-forge
+    libnsl-2.0.0               |       h7f98852_0          31 KB  conda-forge
+    libopenblas-0.3.21         |pthreads_h78a6416_3        10.1 MB  conda-forge
+    libpng-1.6.39              |       h753d276_0         276 KB  conda-forge
+    libsqlite-3.40.0           |       h753d276_1         785 KB  conda-forge
+    libstdcxx-ng-12.2.0        |      h46fd767_19         4.3 MB  conda-forge
+    libtiff-4.5.0              |       ha587672_6         398 KB  conda-forge
+    libunistring-0.9.10        |       h7f98852_0         1.4 MB  conda-forge
+    libuuid-2.38.1             |       h0b41bf4_0          33 KB  conda-forge
+    libwebp-base-1.3.0         |       h0b41bf4_0         348 KB  conda-forge
+    libxcb-1.13                |    h7f98852_1004         391 KB  conda-forge
+    libzlib-1.2.13             |       h166bdaf_4          64 KB  conda-forge
+    lz4-c-1.9.4                |       hcb278e6_0         140 KB  conda-forge
+    ncurses-6.3                |       h27087fc_1        1002 KB  conda-forge
+    numpy-1.24.3               |  py311h64a7726_0         7.5 MB  conda-forge
+    openjdk-17.0.3             |       h4335b31_6       161.0 MB  conda-forge
+    openssl-3.1.0              |       hd590300_2         2.5 MB  conda-forge
+    pcre2-10.40                |       hc3806b6_0         2.3 MB  conda-forge
+    perl-5.32.1                | 2_h7f98852_perl5        14.4 MB  conda-forge
+    pip-23.1.2                 |     pyhd8ed1ab_0         1.3 MB  conda-forge
+    pixman-0.40.0              |       h36c2ea0_0         627 KB  conda-forge
+    popt-1.16                  |                1         171 KB  bioconda
+    pthread-stubs-0.4          |    h36c2ea0_1001           5 KB  conda-forge
+    python-3.11.3              |h2755cc3_0_cpython        29.6 MB  conda-forge
+    python_abi-3.11            |          3_cp311           6 KB  conda-forge
+    readline-8.2               |       h8228510_1         275 KB  conda-forge
+    rsync-3.2.7                |       h70740c4_0         330 KB  conda-forge
+    setuptools-67.7.2          |     pyhd8ed1ab_0         569 KB  conda-forge
+    tar-1.34                   |       hb2e2bae_1         893 KB  conda-forge
+    tk-8.6.12                  |       h27826a3_0         3.3 MB  conda-forge
+    trimmomatic-0.39           |       hdfd78af_2         144 KB  bioconda
+    tzdata-2023c               |       h71feb2d_0         115 KB  conda-forge
+    wget-1.20.3                |       ha35d2d1_1         815 KB  conda-forge
+    wheel-0.40.0               |     pyhd8ed1ab_0          54 KB  conda-forge
+    xorg-fixesproto-5.0        |    h7f98852_1002           9 KB  conda-forge
+    xorg-inputproto-2.3.2      |    h7f98852_1002          19 KB  conda-forge
+    xorg-kbproto-1.0.7         |    h7f98852_1002          27 KB  conda-forge
+    xorg-libice-1.0.10         |       h7f98852_0          58 KB  conda-forge
+    xorg-libsm-1.2.3           |    hd9c2040_1000          26 KB  conda-forge
+    xorg-libx11-1.8.4          |       h0b41bf4_0         810 KB  conda-forge
+    xorg-libxau-1.0.9          |       h7f98852_0          13 KB  conda-forge
+    xorg-libxdmcp-1.1.3        |       h7f98852_0          19 KB  conda-forge
+    xorg-libxext-1.3.4         |       h0b41bf4_2          49 KB  conda-forge
+    xorg-libxfixes-5.0.3       |    h7f98852_1004          18 KB  conda-forge
+    xorg-libxi-1.7.10          |       h7f98852_0          46 KB  conda-forge
+    xorg-libxrender-0.9.10     |    h7f98852_1003          32 KB  conda-forge
+    xorg-libxtst-1.2.3         |    h7f98852_1002          31 KB  conda-forge
+    xorg-recordproto-1.14.2    |    h7f98852_1002           8 KB  conda-forge
+    xorg-renderproto-0.11.1    |    h7f98852_1002           9 KB  conda-forge
+    xorg-xextproto-7.3.0       |    h0b41bf4_1003          30 KB  conda-forge
+    xorg-xproto-7.0.31         |    h7f98852_1007          73 KB  conda-forge
+    xxhash-0.8.0               |       h7f98852_3          86 KB  conda-forge
+    xz-5.2.6                   |       h166bdaf_0         409 KB  conda-forge
+    zlib-1.2.13                |       h166bdaf_4          92 KB  conda-forge
+    zstd-1.5.2                 |       h3eb15da_6         410 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       439.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge 
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-2_gnu 
+  alsa-lib           conda-forge/linux-64::alsa-lib-1.2.8-h166bdaf_0 
+  blast              bioconda/linux-64::blast-2.5.0-hc0b0e79_3 
+  boost              conda-forge/linux-64::boost-1.82.0-py311hcb41070_0 
+  boost-cpp          conda-forge/linux-64::boost-cpp-1.82.0-he19a28c_1 
+  bzip2              conda-forge/linux-64::bzip2-1.0.8-h7f98852_4 
+  ca-certificates    conda-forge/linux-64::ca-certificates-2022.12.7-ha878542_0 
+  cairo              conda-forge/linux-64::cairo-1.16.0-h35add3b_1015 
+  expat              conda-forge/linux-64::expat-2.5.0-hcb278e6_1 
+  font-ttf-dejavu-s~ conda-forge/noarch::font-ttf-dejavu-sans-mono-2.37-hab24e00_0 
+  font-ttf-inconsol~ conda-forge/noarch::font-ttf-inconsolata-3.000-h77eed37_0 
+  font-ttf-source-c~ conda-forge/noarch::font-ttf-source-code-pro-2.038-h77eed37_0 
+  font-ttf-ubuntu    conda-forge/noarch::font-ttf-ubuntu-0.83-hab24e00_0 
+  fontconfig         conda-forge/linux-64::fontconfig-2.14.2-h14ed4e7_0 
+  fonts-conda-ecosy~ conda-forge/noarch::fonts-conda-ecosystem-1-0 
+  fonts-conda-forge  conda-forge/noarch::fonts-conda-forge-1-0 
+  freetype           conda-forge/linux-64::freetype-2.12.1-hca18f0e_1 
+  gettext            conda-forge/linux-64::gettext-0.21.1-h27087fc_0 
+  giflib             conda-forge/linux-64::giflib-5.2.1-h0b41bf4_3 
+  graphite2          conda-forge/linux-64::graphite2-1.3.13-h58526e2_1001 
+  harfbuzz           conda-forge/linux-64::harfbuzz-6.0.0-h3ff4399_1 
+  icu                conda-forge/linux-64::icu-72.1-hcb278e6_0 
+  keyutils           conda-forge/linux-64::keyutils-1.6.1-h166bdaf_0 
+  kraken2            bioconda/linux-64::kraken2-2.1.2-pl5321h9f5acd7_3 
+  krb5               conda-forge/linux-64::krb5-1.20.1-h81ceb04_0 
+  lcms2              conda-forge/linux-64::lcms2-2.15-haa2dc70_1 
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.40-h41732ed_0 
+  lerc               conda-forge/linux-64::lerc-4.0.0-h27087fc_0 
+  libblas            conda-forge/linux-64::libblas-3.9.0-16_linux64_openblas 
+  libcblas           conda-forge/linux-64::libcblas-3.9.0-16_linux64_openblas 
+  libcups            conda-forge/linux-64::libcups-2.3.3-h36d4200_3 
+  libdeflate         conda-forge/linux-64::libdeflate-1.18-h0b41bf4_0 
+  libedit            conda-forge/linux-64::libedit-3.1.20191231-he28a2e2_2 
+  libexpat           conda-forge/linux-64::libexpat-2.5.0-hcb278e6_1 
+  libffi             conda-forge/linux-64::libffi-3.4.2-h7f98852_5 
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-12.2.0-h65d4601_19 
+  libgfortran-ng     conda-forge/linux-64::libgfortran-ng-12.2.0-h69a702a_19 
+  libgfortran5       conda-forge/linux-64::libgfortran5-12.2.0-h337968e_19 
+  libglib            conda-forge/linux-64::libglib-2.76.2-hebfc3b9_0 
+  libgomp            conda-forge/linux-64::libgomp-12.2.0-h65d4601_19 
+  libiconv           conda-forge/linux-64::libiconv-1.17-h166bdaf_0 
+  libidn2            conda-forge/linux-64::libidn2-2.3.4-h166bdaf_0 
+  libjpeg-turbo      conda-forge/linux-64::libjpeg-turbo-2.1.5.1-h0b41bf4_0 
+  liblapack          conda-forge/linux-64::liblapack-3.9.0-16_linux64_openblas 
+  libnsl             conda-forge/linux-64::libnsl-2.0.0-h7f98852_0 
+  libopenblas        conda-forge/linux-64::libopenblas-0.3.21-pthreads_h78a6416_3 
+  libpng             conda-forge/linux-64::libpng-1.6.39-h753d276_0 
+  libsqlite          conda-forge/linux-64::libsqlite-3.40.0-h753d276_1 
+  libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-12.2.0-h46fd767_19 
+  libtiff            conda-forge/linux-64::libtiff-4.5.0-ha587672_6 
+  libunistring       conda-forge/linux-64::libunistring-0.9.10-h7f98852_0 
+  libuuid            conda-forge/linux-64::libuuid-2.38.1-h0b41bf4_0 
+  libwebp-base       conda-forge/linux-64::libwebp-base-1.3.0-h0b41bf4_0 
+  libxcb             conda-forge/linux-64::libxcb-1.13-h7f98852_1004 
+  libzlib            conda-forge/linux-64::libzlib-1.2.13-h166bdaf_4 
+  lz4-c              conda-forge/linux-64::lz4-c-1.9.4-hcb278e6_0 
+  ncurses            conda-forge/linux-64::ncurses-6.3-h27087fc_1 
+  numpy              conda-forge/linux-64::numpy-1.24.3-py311h64a7726_0 
+  openjdk            conda-forge/linux-64::openjdk-17.0.3-h4335b31_6 
+  openssl            conda-forge/linux-64::openssl-3.1.0-hd590300_2 
+  pcre2              conda-forge/linux-64::pcre2-10.40-hc3806b6_0 
+  perl               conda-forge/linux-64::perl-5.32.1-2_h7f98852_perl5 
+  pip                conda-forge/noarch::pip-23.1.2-pyhd8ed1ab_0 
+  pixman             conda-forge/linux-64::pixman-0.40.0-h36c2ea0_0 
+  popt               bioconda/linux-64::popt-1.16-1 
+  pthread-stubs      conda-forge/linux-64::pthread-stubs-0.4-h36c2ea0_1001 
+  python             conda-forge/linux-64::python-3.11.3-h2755cc3_0_cpython 
+  python_abi         conda-forge/linux-64::python_abi-3.11-3_cp311 
+  readline           conda-forge/linux-64::readline-8.2-h8228510_1 
+  rsync              conda-forge/linux-64::rsync-3.2.7-h70740c4_0 
+  setuptools         conda-forge/noarch::setuptools-67.7.2-pyhd8ed1ab_0 
+  tar                conda-forge/linux-64::tar-1.34-hb2e2bae_1 
+  tk                 conda-forge/linux-64::tk-8.6.12-h27826a3_0 
+  trimmomatic        bioconda/noarch::trimmomatic-0.39-hdfd78af_2 
+  tzdata             conda-forge/noarch::tzdata-2023c-h71feb2d_0 
+  wget               conda-forge/linux-64::wget-1.20.3-ha35d2d1_1 
+  wheel              conda-forge/noarch::wheel-0.40.0-pyhd8ed1ab_0 
+  xorg-fixesproto    conda-forge/linux-64::xorg-fixesproto-5.0-h7f98852_1002 
+  xorg-inputproto    conda-forge/linux-64::xorg-inputproto-2.3.2-h7f98852_1002 
+  xorg-kbproto       conda-forge/linux-64::xorg-kbproto-1.0.7-h7f98852_1002 
+  xorg-libice        conda-forge/linux-64::xorg-libice-1.0.10-h7f98852_0 
+  xorg-libsm         conda-forge/linux-64::xorg-libsm-1.2.3-hd9c2040_1000 
+  xorg-libx11        conda-forge/linux-64::xorg-libx11-1.8.4-h0b41bf4_0 
+  xorg-libxau        conda-forge/linux-64::xorg-libxau-1.0.9-h7f98852_0 
+  xorg-libxdmcp      conda-forge/linux-64::xorg-libxdmcp-1.1.3-h7f98852_0 
+  xorg-libxext       conda-forge/linux-64::xorg-libxext-1.3.4-h0b41bf4_2 
+  xorg-libxfixes     conda-forge/linux-64::xorg-libxfixes-5.0.3-h7f98852_1004 
+  xorg-libxi         conda-forge/linux-64::xorg-libxi-1.7.10-h7f98852_0 
+  xorg-libxrender    conda-forge/linux-64::xorg-libxrender-0.9.10-h7f98852_1003 
+  xorg-libxtst       conda-forge/linux-64::xorg-libxtst-1.2.3-h7f98852_1002 
+  xorg-recordproto   conda-forge/linux-64::xorg-recordproto-1.14.2-h7f98852_1002 
+  xorg-renderproto   conda-forge/linux-64::xorg-renderproto-0.11.1-h7f98852_1002 
+  xorg-xextproto     conda-forge/linux-64::xorg-xextproto-7.3.0-h0b41bf4_1003 
+  xorg-xproto        conda-forge/linux-64::xorg-xproto-7.0.31-h7f98852_1007 
+  xxhash             conda-forge/linux-64::xxhash-0.8.0-h7f98852_3 
+  xz                 conda-forge/linux-64::xz-5.2.6-h166bdaf_0 
+  zlib               conda-forge/linux-64::zlib-1.2.13-h166bdaf_4 
+  zstd               conda-forge/linux-64::zstd-1.5.2-h3eb15da_6 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+                                                                                                                                              
+Preparing transaction: done                                                                                                                   
+Verifying transaction: done                                                                                                                   
+Executing transaction: done                                                                                                                   
+#                                                                                                                                             
+# To activate this environment, use                                                                                                           
+#                                                                                                                                             
+#     $ conda activate metagenomics                                                                                                           
+#                                                                                                                                             
+# To deactivate an active environment, use                                                                                                    
+#                                                                                                                                             
+#     $ conda deactivate                                                                                                                      
+                                                                                                                                              
+(base) alakh@alakh-HP-Laptop-15-bs0xx:~$ conda env list
+# conda environments:                                                                                                                         
+#                                                                                                                                             
+                         /home/alakh/anaconda3                                                                                                
+                         /home/alakh/anaconda3/envs/metagenomics                                                                              
+base                  *  /home/alakh/miniconda3                                                                                               
+metagenomics             /home/alakh/miniconda3/envs/metagenomics                                                                             
+                                                                                                                                              
+(base) alakh@alakh-HP-Laptop-15-bs0xx:~$ conda activate metagenomics
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~$ kraken2                                                                                      
+Need to specify input filenames!                                                                                                              
+Usage: kraken2 [options] <filename(s)>                                                                                                        
+                                                                                                                                              
+Options:                                                                                                                                      
+  --db NAME               Name for Kraken 2 DB                                                                                                
+                          (default: none)                                                                                                     
+  --threads NUM           Number of threads (default: 1)                                                                                      
+  --quick                 Quick operation (use first hit or hits)                                                                             
+  --unclassified-out FILENAME                                                                                                                 
+                          Print unclassified sequences to filename                                                                            
+  --classified-out FILENAME                                                                                                                   
+                          Print classified sequences to filename                                                                              
+  --output FILENAME       Print output to filename (default: stdout); "-" will                                                                
+                          suppress normal output                                                                                              
+  --confidence FLOAT      Confidence score threshold (default: 0.0); must be
+                          in [0, 1].
+  --minimum-base-quality NUM
+                          Minimum base quality used in classification (def: 0,
+                          only effective with FASTQ input).
+  --report FILENAME       Print a report with aggregrate counts/clade to file
+  --use-mpa-style         With --report, format report output like Kraken 1's
+                          kraken-mpa-report
+  --report-zero-counts    With --report, report counts for ALL taxa, even if
+                          counts are zero
+  --report-minimizer-data With --report, report minimizer and distinct minimizer
+                          count information in addition to normal Kraken report
+  --memory-mapping        Avoids loading database into RAM
+  --paired                The filenames provided have paired-end reads
+  --use-names             Print scientific names instead of just taxids
+  --gzip-compressed       Input files are compressed with gzip
+  --bzip2-compressed      Input files are compressed with bzip2
+  --minimum-hit-groups NUM
+                          Minimum number of hit groups (overlapping k-mers
+                          sharing the same minimizer) needed to make a call
+                          (default: 2)
+  --help                  Print this message
+  --version               Print version information
+
+If none of the *-compressed flags are specified, and the filename provided
+is a regular file, automatic format detection is attempted.
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~$ trimmomatic
+Usage: 
+       PE [-version] [-threads <threads>] [-phred33|-phred64] [-trimlog <trimLogFile>] [-summary <statsSummaryFile>] [-quiet] [-validatePairs] [-basein <inputBase> | <inputFile1> <inputFile2>] [-baseout <outputBase> | <outputFile1P> <outputFile1U> <outputFile2P> <outputFile2U>] <trimmer1>...
+   or: 
+       SE [-version] [-threads <threads>] [-phred33|-phred64] [-trimlog <trimLogFile>] [-summary <statsSummaryFile>] [-quiet] <inputFile> <outputFile> <trimmer1>...
+   or: 
+       -version
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~$ mkdir metagenomics
+mkdir: cannot create directory ‘metagenomics’: File exists
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~$ cd metagenomics
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ wget https://genome-idx.s3.amazonaws.com/kraken/minikraken2_v2_8GB_201904.tgz
+--2023-05-01 01:13:07--  https://genome-idx.s3.amazonaws.com/kraken/minikraken2_v2_8GB_201904.tgz
+Resolving genome-idx.s3.amazonaws.com (genome-idx.s3.amazonaws.com)... 52.216.26.156, 54.231.162.201, 52.216.177.163, ...
+Connecting to genome-idx.s3.amazonaws.com (genome-idx.s3.amazonaws.com)|52.216.26.156|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5935990636 (5.5G) [application/x-tar]
+Saving to: ‘minikraken2_v2_8GB_201904.tgz’
+
+minikraken2_v2_8GB_201904.tgz       100%[=================================================================>]   5.53G  3.41MB/s    in 35m 43s 
+
+2023-05-01 01:48:52 (2.64 MB/s) - ‘minikraken2_v2_8GB_201904.tgz’ saved [5935990636/5935990636]
+
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls
+minikraken2_v2_8GB_201904.tgz
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ tar xfvz https://genome-idx.s3.amazonaws.com/kraken/minikraken2_v2_8GB_201904.tgz
+tar (child): Cannot connect to https: resolve failed
+
+gzip: stdin: unexpected end of file
+tar: Child returned status 128
+tar: Error is not recoverable: exiting now
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ tar xfvz minikraken2_v2_8GB_201904.tgz
+minikraken2_v2_8GB_201904_UPDATE/
+minikraken2_v2_8GB_201904_UPDATE/taxo.k2d
+minikraken2_v2_8GB_201904_UPDATE/opts.k2d
+minikraken2_v2_8GB_201904_UPDATE/database100mers.kmer_distrib
+minikraken2_v2_8GB_201904_UPDATE/database150mers.kmer_distrib
+minikraken2_v2_8GB_201904_UPDATE/database200mers.kmer_distrib
+minikraken2_v2_8GB_201904_UPDATE/hash.k2d
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls
+minikraken2_v2_8GB_201904.tgz  minikraken2_v2_8GB_201904_UPDATE
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls minikraken2_v2_8GB_201904_UPDATE/
+database100mers.kmer_distrib  database150mers.kmer_distrib  database200mers.kmer_distrib  hash.k2d  opts.k2d  taxo.k2d
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls
+data  minikraken2_v2_8GB_201904.tgz  minikraken2_v2_8GB_201904_UPDATE
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls data
+drive-download-20230430T203413Z-001.zip
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls data
+drive-download-20230430T203413Z-001  drive-download-20230430T203413Z-001.zip  lib5.R1_001.fastq.gz  lib5.R2_001.fastq.gz
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls data
+lib5.R1_001.fastq.gz  lib5.R2_001.fastq.gz
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ wget https://raw.githubusercontent.com/usadellab/Trimmomatic/main/adapters/TruSeq3-PE.fa
+--2023-05-01 02:11:41--  https://raw.githubusercontent.com/usadellab/Trimmomatic/main/adapters/TruSeq3-PE.fa
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8001::154, 2606:50c0:8003::154, 2606:50c0:8000::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8001::154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 94 [text/plain]
+Saving to: ‘TruSeq3-PE.fa’
+
+TruSeq3-PE.fa                       100%[=================================================================>]      94  --.-KB/s    in 0s      
+
+2023-05-01 02:11:41 (876 KB/s) - ‘TruSeq3-PE.fa’ saved [94/94]
+
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls
+data  minikraken2_v2_8GB_201904.tgz  minikraken2_v2_8GB_201904_UPDATE  TruSeq3-PE.fa
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls data
+lib5.R1_001.fastq.gz  lib5.R2_001.fastq.gz
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ read1=data/lib5.R1_001.fastq.gz 
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ read2=data/lib5.R2_001.fastq.gz 
+data/                             minikraken2_v2_8GB_201904.tgz     minikraken2_v2_8GB_201904_UPDATE/ TruSeq3-PE.fa
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ read2=data/lib5.R2_001.fastq.gz 
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ trimmomatic PE $read1 $read2 lib5.trimmed.paired.R1.fastq.gz lib5.trimmed.unpaired.R1.fastq.gz lib5.trimmed.paired.R2.fastq.gz lib5.trimmed.unpaired.R2.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 MINLEN:36
+TrimmomaticPE: Started with arguments:
+ data/lib5.R1_001.fastq.gz data/lib5.R2_001.fastq.gz lib5.trimmed.paired.R1.fastq.gz lib5.trimmed.unpaired.R1.fastq.gz lib5.trimmed.paired.R2.fastq.gz lib5.trimmed.unpaired.R2.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 MINLEN:36
+Multiple cores found: Using 4 threads
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 500000 Both Surviving: 489762 (97.95%) Forward Only Surviving: 9880 (1.98%) Reverse Only Surviving: 16 (0.00%) Dropped: 342 (0.07%)
+TrimmomaticPE: Completed successfully
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ LS
+LS: command not found
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls
+data                             lib5.trimmed.paired.R2.fastq.gz    lib5.trimmed.unpaired.R2.fastq.gz  minikraken2_v2_8GB_201904_UPDATE
+lib5.trimmed.paired.R1.fastq.gz  lib5.trimmed.unpaired.R1.fastq.gz  minikraken2_v2_8GB_201904.tgz      TruSeq3-PE.fa
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ mkdir trimmed
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ mv *trimmed*gz trimmed/
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls trimmed/
+lib5.trimmed.paired.R1.fastq.gz  lib5.trimmed.paired.R2.fastq.gz  lib5.trimmed.unpaired.R1.fastq.gz  lib5.trimmed.unpaired.R2.fastq.gz
+
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls trimmed/
+lib5.trimmed.paired.R1.fastq.gz  lib5.trimmed.paired.R2.fastq.gz  lib5.trimmed.unpaired.R1.fastq.gz  lib5.trimmed.unpaired.R2.fastq.gz
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ read1=trimmed/lib5.trimmed.paired.R1.fastq.gz
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ read2=trimmed/lib5.trimmed.paired.R2.fastq.gz 
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ ls
+data  lib3.kraken  lib5.kraken  minikraken2_v2_8GB_201904.tgz  minikraken2_v2_8GB_201904_UPDATE  trimmed  TruSeq3-PE.fa
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ krakendb=minikraken2_v2_8GB_201904_UPDATE
+(metagenomics) alakh@alakh-HP-Laptop-15-bs0xx:~/metagenomics$ kraken2 --use-names --db $krakendb --threads 8 --report lib5.report --paired -- gzip-compressed $read1 $read2 > lib5.kraken 
+
+
